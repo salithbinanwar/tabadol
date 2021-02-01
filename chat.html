@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#16489F">
+    <meta name="Tabadol" content="Online Shopping Application" />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+    <!-- google font -->
+    <link rel="stylesheet" href="./assets/css/googleFonts.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="./assets/css/uikit.min.css">
+
+    <!-- font-Awesome Icons -->
+    <link rel="stylesheet" href="./assets/fontawesome-css/all.min.css" />
+
+    <!-- aos animation link -->
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+
+    <!-- line icons link -->
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+
+    <!-- main style  -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- All js files for all pages -->
+    
+    <!-- jquery js -->
+    <script src="./assets/js/jquery.min.js"></script>
+    
+    <!-- AOS animation js -->
+    <script src="./assets/js/aos.js"></script>
+    
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+    
+    <!-- bootstrap js -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    
+    <!-- uikit js -->
+    <script src="./assets/js/uikit.min.js"></script>
+    <script src="./assets/js/uikit-icons.min.js"></script>
+
+    <title>Chat</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="header" style="height: 109px;">
+        <div class="uk-container uk-container-large">
+            <nav uk-navbar>
+    
+                <div class="uk-navbar-left" style="z-index:1000">
+    
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#"><img src="./assets//images/logo_new.png"
+                                    style="padding-top: 30px;" alt="tabadol_logo"></a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right uk-hidden@m">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active btn btn-primary px-2 mt-4" style="padding: 12px"
+                            uk-toggle="target: #offcanvas-nav">Menu
+                            <i class="lni lni-menu"></i>
+                        </li>
+                        <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+                            <div class="uk-offcanvas-bar p-0"
+                                style="background-image: url('./assets//images/new-arrival-bg.png');">
+                                <section class="px-3 py-2" style="background: #fff;">
+                                    <a href="/index.html"><img src="./assets//images/logo_new.png" style="padding-top: 30px;"
+                                            alt="tabadol_logo"></a>
+                                </section>
+                                <section class="px-3 py-2">
+                                    <div class="uk-width-1-2@s uk-width-2-5@m">
+                                        <ul class="uk-nav-parent-icon" uk-nav>
+                                            <li>
+                                                <a href="/dashboard.html" class="nav-list-menu-active">
+                                                    <i class="fas fa-chevron-right pr-1"></i> Dashboard
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/listing_product_vartical.html" class="">
+                                                    <i class="fas fa-chevron-right pr-1"></i> My Listings
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/my_swap_request.html" class="">
+                                                    <i class="fas fa-chevron-right pr-1"></i> Swap Request
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/favourites_vertical_list.html" class="">
+                                                    <i class="fas fa-chevron-right pr-1"></i> Favourites
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/account_details.html" class="">
+                                                    <i class="fas fa-chevron-right pr-1"></i> Account Details
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/chat.html" class="">
+                                                    <i class="fas fa-chevron-right pr-1"></i> Messages <span class="badge rounded-pill bg-primary">20   </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/login_register.html" class="">
+                                                    <i class="fas fa-chevron-right pr-1"></i> Logout
+                                                </a>
+                                            </li>
+                                            <hr>
+                                            <li class="uk-parent">
+                                                <a href="#" class="uk-text-bolder"><img src="./assets/images/location_icon.png" alt="location_icon"
+                                                        style="height: 23px;padding-bottom:7px;padding-right: 5px;">
+                                                    Dubai</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="#" class="text-white">Abu Dhabi</a></li>
+                                                    <li><a href="#" class="text-white">Ras al Khaimah</a></li>
+                                                    <li><a href="#" class="text-white">Sharjah</a></li>
+                                                    <li><a href="#" class="text-white">Fujairah</a></li>
+                                                    <li><a href="#" class="text-white">Ajman</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class=" uk-text-bolder" href="#"><img src="./assets/images/help_icon.png"
+                                                        style="height: 20px;padding-right: 2px;" alt="help_icon">
+                                                    Help</a>
+                                            </li>
+                                            <li class="uk-parent">
+                                                <a class=" uk-text-bolder" href="#"><img src="./assets/images/money_aed_icon.png"
+                                                        style="height: 15px;padding-bottom:0px;padding-right: 2px;" alt="money_icon">
+                                                    AED</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="#" class="text-white">Dollar</a></li>
+                                                    <li><a href="#" class="text-white">Pound</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class=" uk-text-bolder" href="/dashboard.html"><img src="./assets/images/profile_icon.png" class="pr-1"
+                                                        alt="profile_icon"> Profile</a></li>
+                                            <li class="d-flex"><a class="uk-text-bolder" href="#">EN</a><a href="#" class="uk-text-bolder pl-2"> |
+                                                    عربى</a>
+                                            </li>
+                                            <li class="uk-parent">
+                                                <a class=" uk-text-bolder" href="#">More</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;" href="#">Gaming</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;" href="#">Collectables</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;" href="#">Electronics</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;" href="#">Furniture</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;" href="#">E-Books</a>
+                                                    </li>
+                                
+                                                    <li><button
+                                                            class="mt-3 py-1 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"
+                                                            href="#">Post your
+                                                            ad</button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right uk-visible@m" style="position: relative;top: -23px;">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#" class="uk-text-bolder navbar-opacity"><img
+                                    src="./assets/images/location_icon.png" alt="location_icon"
+                                    style="height: 23px;padding-bottom:7px;padding-right: 5px;"> Dubai <img
+                                    src="./assets/images/icon_dropdown.png" style="padding-left: 7px;" alt="money_icon"></a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;
+                                        filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#" class="text-white">Abu Dhabi</a></li>
+                                    <li><a href="#" class="text-white">Ras al Khaimah</a></li>
+                                    <li><a href="#" class="text-white">Sharjah</a></li>
+                                    <li><a href="#" class="text-white">Fujairah</a></li>
+                                    <li><a href="#" class="text-white">Ajman</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="uk-active "><a class=" uk-text-bolder navbar-opacity" href="#"><img
+                                    src="./assets/images/help_icon.png" style="height: 20px;padding-right: 2px;"
+                                    alt="help_icon">
+                                Help</a>
+                        </li>
+                        <li class="uk-active"><a class=" uk-text-bolder navbar-opacity" href="#"><img
+                                    src="./assets/images/money_icon.png"
+                                    style="height: 40px;padding-bottom:0px;padding-right: 2px;" alt="money_icon"> AED
+                                <img src="./assets/images/icon_dropdown.png" style="padding-left: 7px;"
+                                    alt="money_icon"></a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;
+                                        filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#" class="text-white">Dollar</a></li>
+                                    <li><a href="#" class="text-white">Pound</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="uk-active"><a class="uk-text-bolder  navbar-opacity" href="#">EN | عربى</a>
+                        </li>
+                    </ul>
+    
+                </div>
+            </nav>
+            <nav class="nav-position uk-visible@m pt-1" uk-navbar style="position: relative;top: -61px">
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Gaming</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Collectables</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Electronics</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Furniture</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">E-Books</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class=" uk-text-bolder" href="#">
+                                <img src="./assets/images/profile_icon.png" alt="profile_icon">
+                            </a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="/dashboard.html" class="text-white">Profile</a></li>
+                                    <li><a href="/login_register.html" class="text-white">Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><button
+                                class="mt-3 py-1 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"
+                                href="#">Post your
+                                ad</button>
+                        </li>
+                    </ul>
+    
+                </div>
+            </nav>
+        </div>
+        <br><br>
+    </header>
+
+    <!-- breadcum portion -->
+    <section class="breadcum uk-text-center uk-padding">
+        <h2 class="mb-0">My Chat</h2>
+        <ul class="uk-breadcrumb mt-0">
+            <li><a href="/index.html">Home</a></li>
+            <li class="h6 text-white">My Chat</li>
+        </ul>
+    </section>
+
+    <!-- main body part -->
+    <section class="main_body uk-padding pt-0 mt-0 uk-container uk-margin-large-bottom uk-container-xlarge">
+        <div class="row m-0 p-0">
+            <div class="col-md-2 col-sm-2 p-0">
+                <div class="uk-width-1-@m uk-visible@m">
+                    <div class="uk-card text-left">
+                        <ul class="uk-list uk-list-striped uk-border-rounded mb-0">
+                            <li class="px-4 nav-list-menu font-weight-bolder">Menu</li>
+                            <li class="px-4 border">
+                                <a href="/dashboard.html" class="">
+                                    <i class="fas fa-chevron-right pr-1"></i> Dashboard
+                                </a>
+                            </li>
+                            <li class="px-4 border">
+                                <a href="/listing_product_vartical.html" class="">
+                                    <i class="fas fa-chevron-right pr-1"></i> My Listings
+                                </a>
+                            </li>
+                            <li class="px-4 border">
+                                <a href="/my_swap_request.html" class="">
+                                    <i class="fas fa-chevron-right pr-1"></i> Swap Request
+                                </a>
+                            </li>
+                            <li class="px-4 border">
+                                <a href="/favourites_vartical_list.html" class="">
+                                    <i class="fas fa-chevron-right pr-1"></i> Favourites
+                                </a>
+                            </li>
+                            <li class="px-4 border">
+                                <a href="/account_details.html" class="">
+                                    <i class="fas fa-chevron-right pr-1"></i> Account Details
+                                </a>
+                            </li>
+                            <li class="px-4 border">
+                                <a href="/chat.html" class="nav-list-menu-active">
+                                    <i class="fas fa-chevron-right pr-1"></i> Messages <span class="badge rounded-pill bg-primary text-white">20 </span>
+                                </a>
+                            </li>
+                            <li class="px-4 border">
+                                <a href="/login_register.html" class="">
+                                    <i class="fas fa-chevron-right pr-1"></i> Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="row" style="height: 700px;position: relative;">
+                    <div class="col-md-3 col-sm-3 col-12 p-0">
+                        <div class="list-group border">
+                            <a href="#" class="list-group-item chat_list_head">
+                              Recent Chats
+                            </a>
+                            <div class="uk-overflow-auto scrollbar" style="height: 704px;">
+                                <a href="#" class="list-group-item list-group-item-action chat_active">
+                                    <div class="px-1">
+                                        <img class="uk-border-circle float-left pt-2 mr-1" width="30" height="30" src="./assets/images/trader-2.png" alt="">
+                                    </div>
+                                    <div class="pt-2">
+                                        Rezaul Islam
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="px-1">
+                                        <img class="uk-border-circle float-left pt-2 mr-1" width="30" height="30" src="./assets/images/trader-2.png" alt="">
+                                    </div>
+                                    <div class="pt-2">
+                                        Rezaul Islam
+                                        <span class="badge rounded-pill bg-primary text-white">2 </span>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="px-1">
+                                        <img class="uk-border-circle float-left pt-2 mr-1" width="30" height="30" src="./assets/images/trader-2.png" alt="">
+                                    </div>
+                                    <div class="pt-2">
+                                        Reza Rouf
+                                        <span class="badge rounded-pill bg-primary text-white">2 </span>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action ">Gowrab <span class="badge rounded-pill bg-primary text-white">2 </span></a>
+            
+                                <a href="#" class="list-group-item list-group-item-action">Rezaul Islam <span class="badge rounded-pill bg-primary text-white">2 </span></a>
+                                <a href="#" class="list-group-item list-group-item-action">Sazzad <span class="badge rounded-pill bg-primary text-white">2 </span></a>
+                                <a href="#" class="list-group-item list-group-item-action">Reza Rouf <span class="badge rounded-pill bg-primary text-white">2 </span></a>
+                                <a href="#" class="list-group-item list-group-item-action ">Gowrab <span class="badge rounded-pill bg-primary text-white">2 </span></a>
+            
+                                <a href="#" class="list-group-item list-group-item-action">Rezaul Islam <span class="badge rounded-pill bg-primary text-white">2 </span></a>
+                                <a href="#" class="list-group-item list-group-item-action">Sazzad <span class="badge rounded-pill bg-primary text-white">2 </span></a>
+                                <a href="#" class="list-group-item list-group-item-action">Reza Rouf <span class="badge rounded-pill bg-primary text-white">2 </span></a>
+                                <a href="#" class="list-group-item list-group-item-action ">Gowrab <span class="badge rounded-pill bg-primary text-white">2 </span></a>
+            
+                                <a href="#" class="list-group-item list-group-item-action">Rezaul Islam <span class="badge rounded-pill bg-primary text-white">2 </span></a>
+                                <a href="#" class="list-group-item list-group-item-action">Sazzad <span class="badge rounded-pill bg-primary text-white">2 </span></a>
+                                <a href="#" class="list-group-item list-group-item-action">Reza Rouf <span class="badge rounded-pill bg-primary text-white">2 </span></a>
+                                <a href="#" class="list-group-item list-group-item-action ">Gowrab <span class="badge rounded-pill bg-primary text-white">2 </span></a>
+            
+                                <a href="#" class="list-group-item list-group-item-action">Rezaul Islam <span class="badge rounded-pill bg-primary text-white">2 </span></a>
+                                <a href="#" class="list-group-item list-group-item-action">Sazzad <span class="badge rounded-pill bg-primary text-white">2 </span></a>
+                                <a href="#" class="list-group-item list-group-item-action">Reza Rouf <span class="badge rounded-pill bg-primary text-white">2 </span></a>
+                                <a href="#" class="list-group-item list-group-item-action ">Gowrab <span class="badge rounded-pill bg-primary text-white">2 </span></a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-12 p-0 border">
+                        <div class="user-name mb-3 pl-2 py-2" style="border-top: none;border-left: none;border-right: none;border-bottom: 1px solid #d3d2d2;">
+                            <div class="px-1">
+                                <img class="uk-border-circle float-left pt-2 pr-2" width="60" height="50" src="./assets/images/trader-2.png" alt="">
+                            </div>
+                            <div>
+                                <h3 class="py-0 my-0">
+                                    Rezaul Islam
+                                </h3>
+                                <!-- <p class="pt-0 mt-0 mb-2"> <span class="badge rounded-pill bg-success" style="color:transparent;font-size: 7px;">0</span> <span class="pt-2"> Active</span></p> -->
+                                <p class="pt-0 mt-0 mb-2"> <span class="badge rounded-pill bg-warning" style="color:transparent;font-size: 7px;">0</span> <span class="pt-2"> Away</span></p>
+                            </div>
+                        </div>
+                        <div class="chat-box-main uk-overflow-auto scrollbar">
+                            <div class="client-message d-flex-inline mb-3 text-right">
+                                <div class="pr-1">
+                                    <img class="uk-border-circle float-right pt-2" width="30" height="30" src="./assets/images/trader-1.png" alt="">
+                                </div>
+                                <div class="pr-5 py-2 uk-border-rounded mb-1">
+                                   <div class="px-3 py-2" style="background-color:#f4f2f2;border-radius: 5px;">
+                                    Lorem ipsum dolor sit amet consectetur, 
+                                   </div>
+                                </div>
+                                <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom pr-5 pt-2" style="font-size: 12px;"><time datetime="2016-04-01T19:00"><span>Seen</span> April 01, 2016 </time></p>
+                            </div>
+            
+                            <div class="trader-message d-flex-inline mb-3 text-left ">
+                                <div class="px-1">
+                                    <img class="uk-border-circle float-left pt-2" width="30" height="30" src="./assets/images/trader-2.png" alt="">
+                                </div>
+                                <div class="pl-5 py-1 uk-border-rounded">
+                                    <div class="px-3 py-2" style="background-color:#f4f2f2;border-radius: 5px;">
+                                        Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus aliquid explicabo fugiat reiciendis, laboriosam assumenda veniam, velit, eius repellat voluptates esse nemo aperiam dolorum dicta a animi ab soluta iusto.
+                                    </div>
+                                </div>
+                                <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom pl-5 pt-2" style="font-size: 12px;"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                            </div>
+        
+                            <div class="trader-message d-flex-inline mb-3 text-left ">
+                                <div class="px-1">
+                                    <img class="uk-border-circle float-left pt-2" width="30" height="30" src="./assets/images/trader-2.png" alt="">
+                                </div>
+                                <div class="pl-5 py-1 uk-border-rounded">
+                                    <div class="px-3 py-2" style="background-color:#f4f2f2;border-radius: 5px;">
+                                        Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus aliquid explicabo fugiat reiciendis, laboriosam assumenda veniam, velit, eius repellat voluptates esse nemo aperiam dolorum dicta a animi ab soluta iusto.
+                                    </div> 
+                                </div>
+                                <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom pl-5 pt-2" style="font-size: 12px;"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                            </div>
+            
+                            <div class="client-message d-flex-inline mb-3 text-right ">
+                                <div class="pr-1">
+                                    <img class="uk-border-circle float-right pt-2" width="30" height="30" src="./assets/images/trader-1.png" alt="">
+                                </div>
+                                <div class="pr-5 py-1 uk-border-rounded" >
+                                    <div class="px-3 py-2" style="background-color:#f4f2f2;border-radius: 5px;">
+                                        Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus aliquid explicabo fugiat reiciendis, laboriosam assumenda veniam, velit, eius repellat voluptates esse nemo aperiam dolorum dicta a animi ab soluta iusto.
+                                    </div>
+                                </div>
+                                <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom pr-5 pt-2" style="font-size: 12px;"><time datetime="2016-04-01T19:00"><span>Seen</span> April 01, 2016 </time></p>
+                            </div>
+        
+                            <div class="client-message d-flex-inline mb-3 text-right">
+                                <div class="pr-1">
+                                    <img class="uk-border-circle float-right pt-2" width="30" height="30" src="./assets/images/trader-1.png" alt="">
+                                </div>
+                                <div class="pr-5 py-1 uk-border-rounded mb-1">
+                                    <div class="px-3 py-2" style="background-color:#f4f2f2;border-radius: 5px;">
+                                        Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus aliquid explicabo fugiat reiciendis, laboriosam assumenda veniam, velit, eius repellat voluptates esse nemo aperiam dolorum dicta a animi ab soluta iusto.
+                                    </div>
+                                </div>
+                                <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom pr-5 pt-2" style="font-size: 12px;"><time datetime="2016-04-01T19:00"><span>Seen</span> April 01, 2016 </time></p>
+                            </div>
+            
+                            <div class="trader-message d-flex-inline mb-3 text-left ">
+                                <div class="px-1">
+                                    <img class="uk-border-circle float-left pt-2" width="30" height="30" src="./assets/images/trader-2.png" alt="">
+                                </div>
+                                <div class="pl-5 py-1 uk-border-rounded">
+                                    <div class="px-3 py-2" style="background-color:#f4f2f2;border-radius: 5px;">
+                                        Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus aliquid explicabo fugiat reiciendis, laboriosam assumenda veniam, velit, eius repellat voluptates esse nemo aperiam dolorum dicta a animi ab soluta iusto.
+                                    </div> 
+                                </div>
+                                <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom pl-5 pt-2" style="font-size: 12px;"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                            </div>
+            
+                            <div class="client-message d-flex-inline mb-3 text-right ">
+                                <div class="pr-1">
+                                    <img class="uk-border-circle float-right pt-2" width="30" height="30" src="./assets/images/trader-1.png" alt="">
+                                </div>
+                                <div class="pr-5 py-1 uk-border-rounded" >
+                                    <div class="px-3 py-2" style="background-color:#f4f2f2;border-radius: 5px;">
+                                        Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus aliquid explicabo fugiat reiciendis, laboriosam assumenda veniam, velit, eius repellat voluptates esse nemo aperiam dolorum dicta a animi ab soluta iusto.
+                                    </div>
+                                </div>
+                                <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom pr-5 pt-2" style="font-size: 12px;"><time datetime="2016-04-01T19:00"><span>Seen</span> April 01, 2016 </time></p>
+                            </div>
+        
+                            <div class="client-message d-flex-inline mb-3 text-right">
+                                <div class="pr-1">
+                                    <img class="uk-border-circle float-right pt-2" width="30" height="30" src="./assets/images/trader-1.png" alt="">
+                                </div>
+                                <div class="pr-5 py-1 uk-border-rounded mb-1">
+                                    <div class="px-3 py-2" style="background-color:#f4f2f2;border-radius: 5px;">
+                                        Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus aliquid explicabo fugiat reiciendis, laboriosam assumenda veniam, velit, eius repellat voluptates esse nemo aperiam dolorum dicta a animi ab soluta iusto.
+                                    </div>
+                                </div>
+                                <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom pr-5 pt-2" style="font-size: 12px;"><time datetime="2016-04-01T19:00"><span>Seen</span> April 01, 2016 </time></p>
+                            </div>
+            
+                            <div class="trader-message d-flex-inline mb-3 text-left ">
+                                <div class="px-1">
+                                    <img class="uk-border-circle float-left pt-2" width="30" height="30" src="./assets/images/trader-2.png" alt="">
+                                </div>
+                                <div class="pl-5 py-1 uk-border-rounded">
+                                    <div class="px-3 py-2" style="background-color:#f4f2f2;border-radius: 5px;">
+                                        Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus aliquid explicabo fugiat reiciendis, laboriosam assumenda veniam, velit, eius repellat voluptates esse nemo aperiam dolorum dicta a animi ab soluta iusto.
+                                    </div> 
+                                </div>
+                                <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom pl-5 pt-2" style="font-size: 12px;"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                            </div>
+            
+                            <div class="client-message d-flex-inline mb-3 text-right ">
+                                <div class="pr-1">
+                                    <img class="uk-border-circle float-right pt-2" width="30" height="30" src="./assets/images/trader-1.png" alt="">
+                                </div>
+                                <div class="pr-5 py-1 uk-border-rounded" >
+                                    <div class="px-3 py-2" style="background-color:#f4f2f2;border-radius: 5px;">
+                                        Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus aliquid explicabo fugiat reiciendis, laboriosam assumenda veniam, velit, eius repellat voluptates esse nemo aperiam dolorum dicta a animi ab soluta iusto.
+                                    </div>
+                                </div>
+                                <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom pr-5 pt-2" style="font-size: 12px;"><time datetime="2016-04-01T19:00"><span>Seen</span> April 01, 2016 </time></p>
+                            </div>
+                        </div>
+                        <form action="/" method="post">
+                            <div class="d-flex flex-row">
+                                <div class="mr-1">
+                                    <textarea class="uk-textarea" rows="5" placeholder="Write here" style="position: absolute;bottom: 0;padding-right: 20px;"></textarea>
+                                </div>
+                                <div style="position: absolute;right: 15px;bottom:0; display: flex; flex-direction: row;">
+                                    <div uk-form-custom class="my-1 mr-2">
+                                        <input type="file">
+                                        <button class="uk-border-circle py-1 px-1 btn btn-primary" type="button" tabindex="-1"><span uk-icon="link"></span></button>
+                                    </div>
+                                    <div class="my-1">
+                                        <button class="uk-border-circle py-1 px-1 btn btn-primary" type="submit" tabindex="-1"><span uk-icon="arrow-right"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+    </section>
+
+    <!-- query and info section -->
+    <section style="background: #000;">
+        <div class="uk-container uk-container-large uk-padding-large pb-3">
+            <div class="uk-child-width-1-5@m uk-grid-large" uk-grid>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Quick Links
+                        <hr style="border-top: 1px solid #910404;width: 7rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="about_us.html" class="text-white footer_link">About Us</a></li>
+                        <li><a href="#" class="text-white footer_link">Advertising</a></li>
+                        <li><a href="#" class="text-white footer_link">How to use site?</a></li>
+                        <li><a href="#" class="text-white footer_link">Payment Methods</a></li>
+                        <li><a href="/blogs.html" class="text-white footer_link">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        UAE
+                        <hr style="border-top: 1px solid #910404; width: 2rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="#" class="text-white footer_link">Dubai</a></li>
+                        <li><a href="#" class="text-white footer_link">Abu Dhabi</a></li>
+                        <li><a href="#" class="text-white footer_link">Ras al Khaimah</a></li>
+                        <li><a href="#" class="text-white footer_link">Sharjah</a></li>
+                        <li><a href="#" class="text-white footer_link">Fujairah</a></li>
+                        <li><a href="#" class="text-white footer_link">Ajman</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Support
+                        <hr style="border-top: 1px solid #910404; width: 5rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="/contact_us.html" class="text-white footer_link">Contact Us</a></li>
+                        <li><a href="/terms_&_condition.html" class="text-white footer_link">Terms of Use</a></li>
+                        <li><a href="/privacy_policy.html" class="text-white footer_link">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white footer_link">Payment Methods</a></li>
+                        <li><a href="/blogs.html" class="text-white footer_link">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Others
+                        <hr style="border-top: 1px solid #910404; width: 4rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="#" class="text-white footer_link">Other Countries</a></li>
+                        <li><a href="#" class="text-white footer_link">Tags</a></li>
+                        <li><a href="#" class="text-white footer_link">Price and Specs</a></li>
+                        <li><a href="#" class="text-white footer_link">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="pl-5">
+                    <div class="py-4">
+                        <img src="./assets/images/logo_new.png" style="width: 176px; max-width: 176px;" alt="logo"><br>
+                        <div class="uk-inline pt-4">
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Facebook" uk-tooltip><i
+                                    class="lni lni-facebook-filled" style="color:grey;"></i></a>
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Twitter" uk-tooltip><i
+                                    class="lni lni-twitter-original" style="color:grey;"></i></a>
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Instagram" uk-tooltip><i
+                                    class="lni lni-instagram-original" style="color:grey;"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer style="background-color: #000;border-top: 1px solid #302f2f;padding: 37px 0px;">
+        <div class="uk-container uk-container-large">
+            <div class="uk-child-width-1-2" uk-grid>
+                <div class="text-left">
+                    <p class="text-white h6">&copy;2020 Tabadol</p>
+                </div>
+                <div class="uk-text-right">
+                    <p class="text-white h6">Designed and Developed by <a style="color:#1748A0 !important"
+                            href="https://royex.net">Royex Technologies</a> </p>
+                </div>
+            </div>
+        </div>
+        <!-- to-top-navigation -->
+        <a href="#" class="text-white to-top" uk-totop title="Go to Top" uk-tooltip uk-scroll></a>
+    </footer>
+
+
+
+    <!-- ==================================================================================================== -->
+
+
+    <!-- ==================================================================================================== -->
+</body>
+
+</html>

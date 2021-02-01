@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#16489F">
+    <meta name="Tabadol" content="Online Shopping Application" />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+    <!-- google font -->
+    <link rel="stylesheet" href="./assets/css/googleFonts.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="./assets/css/uikit.min.css">
+
+    <!-- font-Awesome Icons -->
+    <link rel="stylesheet" href="./assets/fontawesome-css/all.min.css" />
+
+    <!-- aos animation link -->
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+
+    <!-- line icons link -->
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+
+    <!-- main style  -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- All js files for all pages -->
+    
+    <!-- jquery js -->
+    <script src="./assets/js/jquery.min.js"></script>
+    
+    <!-- AOS animation js -->
+    <script src="./assets/js/aos.js"></script>
+    
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+    
+    <!-- bootstrap js -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    
+    <!-- uikit js -->
+    <script src="./assets/js/uikit.min.js"></script>
+    <script src="./assets/js/uikit-icons.min.js"></script>
+
+    <title>Add Post</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="header" style="height: 109px;">
+        <div class="uk-container uk-container-large">
+            <nav uk-navbar>
+
+                <div class="uk-navbar-left" style="z-index:1000">
+
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#"><img src="./assets//images/logo_new.png"
+                                    style="padding-top: 30px;" alt="tabadol_logo"></a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right uk-hidden@m">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active btn btn-primary px-2 mt-4" style="padding: 12px"
+                            uk-toggle="target: #offcanvas-nav">Menu
+                            <i class="lni lni-menu"></i>
+                        </li>
+                        <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+                            <div class="uk-offcanvas-bar p-0"
+                                style="background-image: url('./assets//images/new-arrival-bg.png');">
+                                <section class="px-3 py-2" style="background: #fff;">
+                                    <a href="index.html"><img src="./assets//images/logo_new.png"
+                                            style="padding-top: 30px;" alt="tabadol_logo"></a>
+                                </section>
+                                <section class="px-3 py-2">
+                                    <div class="uk-width-1-2@s uk-width-2-5@m">
+                                        <ul class="uk-nav-parent-icon" uk-nav>
+                                            <li class="uk-parent">
+                                                <a href="#" class="uk-text-bolder"><img
+                                                        src="./assets/images/location_icon.png" alt="location_icon"
+                                                        style="height: 23px;padding-bottom:7px;padding-right: 5px;">
+                                                    Dubai</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="#" class="text-white">Abu Dhabi</a></li>
+                                                    <li><a href="#" class="text-white">Ras al Khaimah</a></li>
+                                                    <li><a href="#" class="text-white">Sharjah</a></li>
+                                                    <li><a href="#" class="text-white">Fujairah</a></li>
+                                                    <li><a href="#" class="text-white">Ajman</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class=" uk-text-bolder" href="#"><img
+                                                        src="./assets/images/help_icon.png"
+                                                        style="height: 20px;padding-right: 2px;" alt="help_icon">
+                                                    Help</a>
+                                            </li>
+                                            <li class="uk-parent">
+                                                <a class=" uk-text-bolder" href="#"><img
+                                                        src="./assets/images/money_aed_icon.png"
+                                                        style="height: 15px;padding-bottom:0px;padding-right: 2px;"
+                                                        alt="money_icon">
+                                                    AED</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="#" class="text-white">Dollar</a></li>
+                                                    <li><a href="#" class="text-white">Pound</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="uk-parent">
+                                                <a class=" uk-text-bolder" href="#"><img
+                                                        src="./assets/images/profile_icon.png" class="pr-1"
+                                                        alt="profile_icon">
+                                                    Profile</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="#" class="text-white">Profile</a></li>
+                                                    <li><a href="#" class="text-white">Logout</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="d-flex"><a class="uk-text-bolder" href="#">EN</a><a href="#"
+                                                    class="uk-text-bolder pl-2"> | عربى</a>
+                                            </li>
+                                            <li class="uk-parent">
+                                                <a class=" uk-text-bolder" href="#">More</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Gaming</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Collectables</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Electronics</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Furniture</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">E-Books</a>
+                                                    </li>
+
+                                                    <li><button
+                                                            class="mt-3 py-1 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"
+                                                            href="#">Post your
+                                                            ad</button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right uk-visible@m" style="position: relative;top: -23px;">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#" class="uk-text-bolder navbar-opacity"><img
+                                    src="./assets/images/location_icon.png" alt="location_icon"
+                                    style="height: 23px;padding-bottom:7px;padding-right: 5px;"> Dubai <img
+                                    src="./assets/images/icon_dropdown.png" style="padding-left: 7px;"
+                                    alt="money_icon"></a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;
+                                        filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#" class="text-white">Abu Dhabi</a></li>
+                                    <li><a href="#" class="text-white">Ras al Khaimah</a></li>
+                                    <li><a href="#" class="text-white">Sharjah</a></li>
+                                    <li><a href="#" class="text-white">Fujairah</a></li>
+                                    <li><a href="#" class="text-white">Ajman</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="uk-active "><a class=" uk-text-bolder navbar-opacity" href="#"><img
+                                    src="./assets/images/help_icon.png" style="height: 20px;padding-right: 2px;"
+                                    alt="help_icon">
+                                Help</a>
+                        </li>
+                        <li class="uk-active"><a class=" uk-text-bolder navbar-opacity" href="#"><img
+                                    src="./assets/images/money_icon.png"
+                                    style="height: 40px;padding-bottom:0px;padding-right: 2px;" alt="money_icon"> AED
+                                <img src="./assets/images/icon_dropdown.png" style="padding-left: 7px;"
+                                    alt="money_icon"></a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;
+                                        filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#" class="text-white">Dollar</a></li>
+                                    <li><a href="#" class="text-white">Pound</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="uk-active"><a class="uk-text-bolder  navbar-opacity" href="#">EN | عربى</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+            <nav class="nav-position uk-visible@m pt-1" uk-navbar style="position: relative;top: -61px">
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Gaming</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Collectables</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Electronics</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Furniture</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">E-Books</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class=" uk-text-bolder" href="#">
+                                <img src="./assets/images/profile_icon.png" alt="profile_icon">
+                            </a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#" class="text-white">Profile</a></li>
+                                    <li><a href="#" class="text-white">Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="/" class="button-color-white text-white"><button class="py-1 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"href="#"> Post your ad</button></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+        <br><br>
+    </header>
+
+    <!-- breadcum portion -->
+    <section class="breadcum uk-text-center uk-padding">
+        <h2 class="mb-0">Post AD</h2>
+        <ul class="uk-breadcrumb mt-0">
+            <li><a href="/index.html">Home</a></li>
+            <li class="h6 text-white">Post AD</li>
+        </ul>
+    </section>
+
+    <!-- main body part -->
+    <section class="main_body uk-text-center uk-padding uk-container uk-container-large">
+
+        <h2 class="uk-text-bolder mb-0">Parna diam, venenatis sed tempor fauc</h2>
+        <h4 class="mt-2" style="color: grey;">Lorem ipsum dolor sit amet consectetur</h4>
+
+        <div class="mt-5">
+            <form enctype="multipart/form-data">
+            <div class="uk-child-width-1-3@m uk-grid-match uk-grid-medium" uk-grid>
+                    <div>
+                        <h3 class="uk-text-bolder uk-text-left">Select Category</h3>
+                        <div class="uk-card text-left uk-child-width-1-2@m uk-child-width-1-1@s" uk-grid>
+                            
+                            <!-- Select Category field -->
+                            <div>
+                                <label class="uk-form-label uk-text-bolder font-size-18" for="form-stacked-select">Category</label>
+                                <select class="custom-select"
+                                    style="height: 50px;border-radius: 4px;padding-left: 20px;"
+                                    id="inputGroupSelect01">
+                                    <option selected>Select a category</option>
+                                    <option value="Dubai">Dubai</option>
+                                    <option value="Abu Dhabi">Abu Dhabi</option>
+                                    <option value="Ras al Khaimah">Ras al Khaimah</option>
+                                    <option value="Sarjah">Sarjah</option>
+                                    <option value="Fujairah">Fujairah</option>
+                                    <option value="Ajman">Ajman</option>
+                                </select>
+                            </div>
+
+                            <!-- Sub category field -->
+                            <div>
+                                <label class="uk-form-label uk-text-bolder font-size-18" for="form-stacked-select">Sub category</label>
+                                <select class="custom-select" style="height: 50px;border-radius: 4px;padding-left: 20px;" id="inputGroupSelect01">
+                                    <option selected>Sub category</option>
+                                    <option value="Dubai">Dubai</option>
+                                    <option value="Abu Dhabi">Abu Dhabi</option>
+                                    <option value="Ras al Khaimah">Ras al Khaimah</option>
+                                    <option value="Sarjah">Sarjah</option>
+                                    <option value="Fujairah">Fujairah</option>
+                                    <option value="Ajman">Ajman</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Exchange with -->
+                        <div class="mt-4 uk-text-left">
+                            <h3 class="uk-text-bolder uk-text-left mb-2">Exchange With</h3>
+                            <p class="uk-text-left mt-2">Product List (Add max 3 product)</p>
+                            <div class="uk-child-width-1-3@m uk-child-width-1-1@s uk-grid-small uk-overflow-auto scrollbar" style="height: 75px;" uk-grid>
+                                <div>
+                                    <label><input class="uk-checkbox input_check_box" onchange="check()" type="checkbox"><span class="font-size-17 pl-2">Gaming</span>
+                                </div>
+                                <div>
+                                    <label><input class="uk-checkbox input_check_box" type="checkbox"><span class="font-size-17 pl-2">Fashion</span>
+                                </div>
+                                <div>
+                                    <label><input class="uk-checkbox input_check_box" type="checkbox"><span class="font-size-17 pl-2">Jewellery</span>
+                                </div>
+                                <div>
+                                    <label><input class="uk-checkbox input_check_box" type="checkbox"><span class="font-size-17 pl-2">Cars</span>
+                                </div>
+                                <div>
+                                    <label><input class="uk-checkbox input_check_box" type="checkbox"><span class="font-size-17 pl-2">Real Estates</span>
+                                </div>
+                                <div>
+                                    <label><input class="uk-checkbox input_check_box" type="checkbox"><span class="font-size-17 pl-2">Phones</span>
+                                </div>
+                                <div>
+                                    <label><input class="uk-checkbox input_check_box" type="checkbox"><span class="font-size-17 pl-2">Phones</span>
+                                </div>
+                                <div>
+                                    <label><input class="uk-checkbox input_check_box" type="checkbox"><span class="font-size-17 pl-2">Fashion</span>
+                                </div>
+                                <div>
+                                    <label><input class="uk-checkbox input_check_box" type="checkbox"><span class="font-size-17 pl-2">Jewellery</span>
+                                </div>
+                                <div>
+                                    <label><input class="uk-checkbox input_check_box" type="checkbox"><span class="font-size-17 pl-2">Cars</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="mt-5 uk-text-left">
+                            <h3 class="uk-text-bolder uk-text-left mb-2">Features</h3>
+                            <p class="uk-text-left mt-2">Features List</p>
+                            <div class="uk-margin">
+                                <textarea class="uk-textarea pl-4 pt-3" style="border-radius: 4px;" rows="3" placeholder="Write a feature in each line eg."></textarea>
+                                <p class="mt-1" style="font-size: 13px;"> <strong> Warning:</strong> Don't post any illegal or banned products, drugs, weapons or food stuff.</p>
+                            </div>
+                        </div>
+
+                        <!-- images -->
+                        <div class="mt-5 uk-text-left">
+                            <h3 class="uk-text-bolder uk-text-left mb-2">Images</h3>
+                            <p class="uk-text-left mt-2">Drop files here to add them</p>
+                            <div class="uk-margin pl-3 pr-0 border" style="border-radius: 4px;padding: 11px 0px 47px 0px;">
+                                <p class="m-0" style="font-size: 11px;">Recommended image size to (870x493)px, Image maximum size 3 MB.</p>
+                                <p class="m-0" style="font-size: 11px;">Allowed image type (png,jpg,jpeg).You can upload upto 10 images.</p>
+                                <p class="m-0 pb-2 uk-text-bolder" style="font-size: 13px;" id="files-list"></p>
+                                <div class="float-right pt-2">
+                                    <div uk-form-custom>
+                                        <input type="file" id="files" multiple onchange="readFile()">
+                                        <button class="uk-button uk-button-default" style="background-color: black;border-radius: 4px;color:#fff" type="button" tabindex="-1">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-text-left">
+                            <!-- title  -->
+                            <div>
+                                <h3 class="uk-text-bolder uk-text-left">Product Information</h3>
+                                <label class="uk-form-label font-size-18" for="title">Title</label>
+                                <div class="uk-width-1-1">
+                                    <input class="uk-input" id="title" type="text" style="height: 50px;border-radius: 4px;padding-left: 20px;" placeholder="Type title">
+                                </div>
+                            </div>
+
+                            <!-- price type  -->
+                            <div class="mt-3">
+                                <label class="uk-form-label font-size-17" for="form-stacked-select">Price Type</label>
+                                <select class="custom-select" style="height: 50px;border-radius: 4px;padding-left: 20px;" id="inputGroupSelect01">
+                                    <option value="fixed">Fixed</option>
+                                    <option value="negotiable">Negotiable</option>
+                                </select>
+                            </div>
+
+                            <!-- price -->
+                            <div class="mt-3">
+                                <label class="uk-form-label font-size-18" for="title">Price (AED)</label>
+                                <div class="uk-width-1-1">
+                                    <input class="uk-input" id="title" type="text" style="height: 50px;border-radius: 4px;padding-left: 20px;"
+                                        placeholder="Fixed">
+                                </div>
+                            </div>
+
+                            <!-- condition -->
+                            <div class="mt-3">
+                                <div class="uk-margin d-flex flex-row">
+                                    <div class="uk-form-label font-size-18">Condition</div>
+                                    <div class="uk-form-controls pt-1">
+                                        <label class="ml-3"><input class="uk-radio" style="height: 25px;width: 25px;" type="radio" name="radio1"> New</label>
+                                        <label class="ml-3"><input class="uk-radio" style="height: 25px;width: 25px;" type="radio" name="radio1"> Used</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- brand -->
+                            <div class="mt-3">
+                                <label class="uk-form-label font-size-17" for="brand">Brand</label>
+                                <select class="custom-select" style="height: 50px;border-radius: 4px;padding-left: 20px;" id="brand">
+                                    <option value="fixed">Slect an option</option>
+                                    <option value="fixed">Fixed</option>
+                                    <option value="negotiable">Negotiable</option>
+                                </select>
+                            </div>
+
+                            <!-- Authenticity -->
+                            <div class="mt-3">
+                                <div class="uk-margin d-flex flex-row">
+                                    <div class="uk-form-label font-size-18">Authenticity</div>
+                                    <div class="uk-form-controls pt-1">
+                                        <label class="ml-3"><input class="uk-radio" style="height: 25px;width: 25px;" type="radio" name="radio1">
+                                            Original</label>
+                                        <label class="ml-3"><input class="uk-radio" style="height: 25px;width: 25px;" type="radio" name="radio1">
+                                            Copy</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Description -->
+                            <div class="mt-5 uk-text-left">
+                                <h3 class="uk-text-bolder uk-text-left mb-2">Description</h3>
+                                <div class="uk-margin">
+                                    <textarea class="uk-textarea pl-4 pt-3" style="border-radius: 4px;" rows="7"placeholder="Type description"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- contact details  -->
+                    <div>
+                        <div class="uk-text-left">
+
+                            <!-- your name  -->
+                            <div>
+                                <h3 class="uk-text-bolder uk-text-left">Contact Details</h3>
+                                <label class="uk-form-label font-size-18" for="title">Name</label>
+                                <div class="uk-width-1-1">
+                                    <input class="uk-input" id="title" type="text" style="height: 50px;border-radius: 4px;padding-left: 20px;"
+                                        placeholder="Your name">
+                                </div>
+                            </div>
+
+                            <!-- your amirates  -->
+                            <div class="uk-card text-left uk-child-width-1-2@m uk-grid-medium uk-child-width-1-1@s mt-3" uk-grid>
+                            
+                                <!-- Select your amirates -->
+                                <div>
+                                    <label class="uk-form-label font-size-18" for="form-stacked-select">Emirates</label>
+                                    <select class="custom-select" style="height: 50px;border-radius: 4px;padding-left: 20px;"
+                                        id="inputGroupSelect01">
+                                        <option selected>Your Emirates</option>
+                                        <option value="Dubai">Dubai</option>
+                                        <option value="Abu Dhabi">Abu Dhabi</option>
+                                        <option value="Ras al Khaimah">Ras al Khaimah</option>
+                                        <option value="Sarjah">Sarjah</option>
+                                        <option value="Fujairah">Fujairah</option>
+                                        <option value="Ajman">Ajman</option>
+                                    </select>
+                                </div>
+                            
+                                <!-- city field -->
+                                <div>
+                                    <label class="uk-form-label font-size-18" for="form-stacked-select">City</label>
+                                    <select class="custom-select" style="height: 50px;border-radius: 4px;padding-left: 20px;"
+                                        id="inputGroupSelect01">
+                                        <option selected>Your city</option>
+                                        <option value="Dubai">Dubai</option>
+                                        <option value="Abu Dhabi">Abu Dhabi</option>
+                                        <option value="Ras al Khaimah">Ras al Khaimah</option>
+                                        <option value="Sarjah">Sarjah</option>
+                                        <option value="Fujairah">Fujairah</option>
+                                        <option value="Ajman">Ajman</option>
+                                    </select>
+                                </div>
+
+                                <!-- zip code  -->
+                                <div class="mt-3">
+                                    <label class="uk-form-label font-size-18" for="title">Zip Code</label>
+                                    <div class="uk-width-1-1">
+                                        <input class="uk-input" id="title" type="text" style="height: 50px;border-radius: 4px;padding-left: 20px;"
+                                            placeholder="Zip code">
+                                    </div>
+                                </div>
+
+                                <!-- Address  -->
+                                <div class="mt-3">
+                                    <label class="uk-form-label font-size-18" for="title">Address</label>
+                                    <div class="uk-width-1-1">
+                                        <input class="uk-input" id="title" type="text" style="height: 50px;border-radius: 4px;padding-left: 20px;"
+                                            placeholder="Your address">
+                                    </div>
+                                </div>
+
+                                <!-- Phone  -->
+                                <div class="mt-3">
+                                    <label class="uk-form-label font-size-18" for="title">Phone</label>
+                                    <div class="uk-width-1-1">
+                                        <input class="uk-input" id="title" type="tel" style="height: 50px;border-radius: 4px;padding-left: 20px;"
+                                            placeholder="+971 055 4830683">
+                                    </div>
+                                </div>
+
+                                <!-- Land Phone  -->
+                                <div class="mt-3">
+                                    <label class="uk-form-label font-size-18" for="title">Land Phone</label>
+                                    <div class="uk-width-1-1">
+                                        <input class="uk-input" id="title" type="tel" style="height: 50px;border-radius: 4px;padding-left: 20px;"
+                                            placeholder="+971 055 4830683">
+                                    </div>
+                                </div>
+
+                                <!-- Email  -->
+                                <div class="mt-3">
+                                    <label class="uk-form-label font-size-18" for="title">Email</label>
+                                    <div class="uk-width-1-1">
+                                        <input class="uk-input" id="title" type="email" style="height: 50px;border-radius: 4px;padding-left: 20px;"
+                                            placeholder="youremail@email.com">
+                                    </div>
+                                </div>
+
+                                <!-- What's app Number  -->
+                                <div class="mt-3">
+                                    <label class="uk-form-label font-size-18" for="title">Whatsapp Number</label>
+                                    <div class="uk-width-1-1">
+                                        <input class="uk-input" id="title" type="tel" style="height: 50px;border-radius: 4px;padding-left: 20px;"
+                                            placeholder="+971 055 4830683">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- map  -->
+                            <div class="mt-3">
+                                <label class="font-size-18">Map</label>
+                                <label class="ml-3 uk-float-right"><input class="uk-checkbox input_check_box" type="checkbox">
+                                    <span style="font-size: 12px;"> Don't show the map </span></label>
+                                <div id="map" class="uk-border-rounded" style="width:auto;height:250px;background:grey">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- submit button  -->
+                    <div class="mt-1 pl-0">
+                        <div class="uk-child-width-1-2@m uk-child-width-1-1" uk-grid>
+                            <div>
+                                <button type="submit"
+                                    class="py-3 px-5 uk-border-rounded btn uk-box-shadow-hover-xlarge btn-danger">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- query and info section -->
+    <section style="background: #000;">
+        <div class="uk-container uk-container-large uk-padding-large pb-3">
+            <div class="uk-child-width-1-5@m uk-grid-large" uk-grid>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Quick Links
+                        <hr style="border-top: 1px solid #910404;width: 7rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="about_us.html" class="text-white footer_link">About Us</a></li>
+                        <li><a href="#" class="text-white footer_link">Advertising</a></li>
+                        <li><a href="#" class="text-white footer_link">How to use site?</a></li>
+                        <li><a href="#" class="text-white footer_link">Payment Methods</a></li>
+                        <li><a href="#" class="text-white footer_link">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        UAE
+                        <hr style="border-top: 1px solid #910404; width: 2rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="#" class="text-white footer_link">Dubai</a></li>
+                        <li><a href="#" class="text-white footer_link">Abu Dhabi</a></li>
+                        <li><a href="#" class="text-white footer_link">Ras al Khaimah</a></li>
+                        <li><a href="#" class="text-white footer_link">Sharjah</a></li>
+                        <li><a href="#" class="text-white footer_link">Fujairah</a></li>
+                        <li><a href="#" class="text-white footer_link">Ajman</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Support
+                        <hr style="border-top: 1px solid #910404; width: 5rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="contact_us.html" class="text-white footer_link">Contact Us</a></li>
+                        <li><a href="#" class="text-white footer_link">Terms of Use</a></li>
+                        <li><a href="#" class="text-white footer_link">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white footer_link">Payment Methods</a></li>
+                        <li><a href="#" class="text-white footer_link">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Others
+                        <hr style="border-top: 1px solid #910404; width: 4rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="#" class="text-white footer_link">Other Countries</a></li>
+                        <li><a href="#" class="text-white footer_link">Tags</a></li>
+                        <li><a href="#" class="text-white footer_link">Price and Specs</a></li>
+                        <li><a href="#" class="text-white footer_link">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="pl-5">
+                    <div class="py-4">
+                        <img src="./assets/images/logo_new.png" style="width: 176px; max-width: 176px;" alt="logo"><br>
+                        <div class="uk-inline pt-4">
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Facebook" uk-tooltip><i
+                                    class="lni lni-facebook-filled" style="color:grey;"></i></a>
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Twitter" uk-tooltip><i
+                                    class="lni lni-twitter-original" style="color:grey;"></i></a>
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Instagram" uk-tooltip><i
+                                    class="lni lni-instagram-original" style="color:grey;"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer style="background-color: #000;border-top: 1px solid #302f2f;padding: 37px 0px;">
+        <div class="uk-container uk-container-large">
+            <div class="uk-child-width-1-2" uk-grid>
+                <div class="text-left">
+                    <p class="text-white h6">&copy;2020 Tabadol</p>
+                </div>
+                <div class="uk-text-right">
+                    <p class="text-white h6">Designed and Developed by <a style="color:#1748A0 !important"
+                            href="https://royex.net">Royex Technologies</a> </p>
+                </div>
+            </div>
+        </div>
+        <!-- to-top-navigation -->
+        <a href="#" class="text-white to-top" uk-totop title="Go to Top" uk-tooltip uk-scroll></a>
+    </footer>
+
+
+    <script>
+        
+        function check(){
+    
+            let checked = document.querySelectorAll('input[type="checkbox"]');
+            for(let i = 1; i< checked.length; i++){
+                if (check[i].checked) {
+                    alert('hi')
+                }
+            }
+            
+            
+        }
+    </script>
+
+
+    <!-- ==================================================================================================== -->
+    
+    <!-- ==================================================================================================== -->
+</body>
+
+</html>

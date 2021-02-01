@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#16489F">
+    <meta name="Tabadol" content="Online Shopping Application" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+    <!-- google font -->
+    <link rel="stylesheet" href="./assets/css/googleFonts.css">
+
+    <!-- font-Awesome Icons -->
+    <link rel="stylesheet" href="./assets/fontawesome-css/all.min.css" />
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="./assets/css/uikit.min.css">
+
+    <!-- aos animation link -->
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+
+    <!-- line icons link -->
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+
+    <!-- main style  -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- All js files for all pages -->
+    
+    <!-- jquery js -->
+    <script src="./assets/js/jquery.min.js"></script>
+    
+    <!-- AOS animation js -->
+    <script src="./assets/js/aos.js"></script>
+    
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+    
+    <!-- bootstrap js -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    
+    <!-- uikit js -->
+    <script src="./assets/js/uikit.min.js"></script>
+    <script src="./assets/js/uikit-icons.min.js"></script>
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="header" style="height: 109px;">
+        <div class="uk-container uk-container-large">
+            <nav uk-navbar>
+    
+                <div class="uk-navbar-left" style="z-index:1000">
+    
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#"><img src="./assets//images/logo_new.png"
+                                    style="padding-top: 30px;" alt="tabadol_logo"></a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right uk-hidden@m">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active btn btn-primary px-2 mt-4" style="padding: 12px"
+                            uk-toggle="target: #offcanvas-nav">Menu
+                            <i class="lni lni-menu"></i>
+                        </li>
+                        <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+                            <div class="uk-offcanvas-bar p-0"
+                                style="background-image: url('./assets//images/new-arrival-bg.png');">
+                                <section class="px-3 py-2" style="background: #fff;">
+                                    <a href="/index.html"><img src="./assets//images/logo_new.png" style="padding-top: 30px;"
+                                            alt="tabadol_logo"></a>
+                                </section>
+                                <section class="px-3 py-2">
+                                    <div class="uk-width-1-2@s uk-width-2-5@m">
+                                        <ul class="uk-nav-parent-icon" uk-nav>
+                                            <li class="uk-parent">
+                                                <a href="#" class="uk-text-bolder"><img
+                                                        src="./assets/images/location_icon.png" alt="location_icon"
+                                                        style="height: 23px;padding-bottom:7px;padding-right: 5px;">
+                                                    Dubai</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="#" class="text-white">Abu Dhabi</a></li>
+                                                    <li><a href="#" class="text-white">Ras al Khaimah</a></li>
+                                                    <li><a href="#" class="text-white">Sharjah</a></li>
+                                                    <li><a href="#" class="text-white">Fujairah</a></li>
+                                                    <li><a href="#" class="text-white">Ajman</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class=" uk-text-bolder" href="#"><img src="./assets/images/help_icon.png"
+                                                        style="height: 20px;padding-right: 2px;" alt="help_icon">
+                                                    Help</a>
+                                            </li>
+                                            <li class="uk-parent">
+                                                <a class=" uk-text-bolder" href="#"><img
+                                                        src="./assets/images/money_aed_icon.png"
+                                                        style="height: 15px;padding-bottom:0px;padding-right: 2px;"
+                                                        alt="money_icon">
+                                                    AED</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="#" class="text-white">Dollar</a></li>
+                                                    <li><a href="#" class="text-white">Pound</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="uk-parent">
+                                                <a class=" uk-text-bolder" href="#"><img
+                                                        src="./assets/images/profile_icon.png" class="pr-1"
+                                                        alt="profile_icon">
+                                                    Profile</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="/dashboard.html" class="text-white">Profile</a></li>
+                                                    <li><a href="/login_register.html" class="text-white">Logout</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="d-flex"><a class="uk-text-bolder" href="#">EN</a><a href="#"
+                                                    class="uk-text-bolder pl-2"> | عربى</a>
+                                            </li>
+                                            <li class="uk-parent">
+                                                <a class=" uk-text-bolder" href="#">More</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Gaming</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Collectables</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Electronics</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Furniture</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">E-Books</a>
+                                                    </li>
+    
+                                                    <li><button
+                                                            class="mt-3 py-1 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"
+                                                            href="#">Post your
+                                                            ad</button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right uk-visible@m" style="position: relative;top: -23px;">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#" class="uk-text-bolder navbar-opacity"><img
+                                    src="./assets/images/location_icon.png" alt="location_icon"
+                                    style="height: 23px;padding-bottom:7px;padding-right: 5px;"> Dubai <img
+                                    src="./assets/images/icon_dropdown.png" style="padding-left: 7px;" alt="money_icon"></a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;
+                                        filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#" class="text-white">Abu Dhabi</a></li>
+                                    <li><a href="#" class="text-white">Ras al Khaimah</a></li>
+                                    <li><a href="#" class="text-white">Sharjah</a></li>
+                                    <li><a href="#" class="text-white">Fujairah</a></li>
+                                    <li><a href="#" class="text-white">Ajman</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="uk-active "><a class=" uk-text-bolder navbar-opacity" href="#"><img
+                                    src="./assets/images/help_icon.png" style="height: 20px;padding-right: 2px;"
+                                    alt="help_icon">
+                                Help</a>
+                        </li>
+                        <li class="uk-active"><a class=" uk-text-bolder navbar-opacity" href="#"><img
+                                    src="./assets/images/money_icon.png"
+                                    style="height: 40px;padding-bottom:0px;padding-right: 2px;" alt="money_icon"> AED
+                                <img src="./assets/images/icon_dropdown.png" style="padding-left: 7px;"
+                                    alt="money_icon"></a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;
+                                        filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#" class="text-white">Dollar</a></li>
+                                    <li><a href="#" class="text-white">Pound</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="uk-active"><a class="uk-text-bolder  navbar-opacity" href="#">EN | عربى</a>
+                        </li>
+                    </ul>
+    
+                </div>
+            </nav>
+            <nav class="nav-position uk-visible@m pt-1" uk-navbar style="position: relative;top: -61px">
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Gaming</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Collectables</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Electronics</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Furniture</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">E-Books</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class=" uk-text-bolder" href="#">
+                                <img src="./assets/images/profile_icon.png" alt="profile_icon">
+                            </a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="/dashboard.html" class="text-white">Profile</a></li>
+                                    <li><a href="/login_register.html" class="text-white">Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><button
+                                class="mt-3 py-1 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"
+                                href="#">Post your
+                                ad</button>
+                        </li>
+                    </ul>
+    
+                </div>
+            </nav>
+        </div>
+        <br><br>
+    </header>
+
+    <!-- breadcum portion -->
+    <section class="breadcum uk-text-center uk-padding">
+        <h2 class="mb-0">Blog</h2>
+        <ul class="uk-breadcrumb mt-0">
+            <li><a href="/index.html">Home</a></li>
+            <li class="h6 text-white">Blog</li>
+        </ul>
+    </section>
+
+    <!-- main body part -->
+    <section class="main_body uk-text-center uk-padding uk-container uk-container-large">
+
+        <h2 class="uk-text-bolder mb-0">Our Latest News</h2>
+        <h4 class="mt-2" style="color: grey;">Lorem ipsum dolor sit amet</h4>
+
+        <div class="uk-grid-medium mt-5" uk-grid>
+            <div class="uk-width-3-4@m">
+                <div class="text-left mb-5">
+                    <h5 class="font-size-18 mb-2">Plor sit a</h5>
+                    <h3 class="uk-text-bolder mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
+                        voluptates quaerat reiciendis beatae quae? Ad voluptatem cum distinctio possimus.</h3>
+                    <img src="./assets/images/blog_details_pic.png" alt="blog_details_pic">
+
+                    <!-- visible for large device -->
+                    <div class="d-flex flex-row mt-3 uk-visible@m">
+                        <div>
+                            <img src="./assets/images/commenter_person_icon.png" style="height: 22px;" alt="comment">
+                        </div>
+                        <div class="pt-1 pl-2 pr-4">
+                            <p style="color:#828282">By Andru Leo</p>
+                        </div>
+                        <div class="pt-1 pl-2 pr-4">
+                            <p style="color:#828282">|</p>
+                        </div>
+                        <div class="pt-1 pl-3 ">
+                            <img src="./assets/images/calender_icon.png" style="height: 18px;" alt="comment">
+                        </div>
+                        <div class="pt-1 pl-2 pr-4">
+                            <p style="color:#828282">07 July, 2020</p>
+                        </div>
+                        <div class="pt-1 pl-2 pr-3">
+                            <p style="color:#828282">|</p>
+                        </div>
+                        <div class="pt-1 pl-3 ">
+                            <img src="./assets/images/comment_icon.png" style="height: 18px;" alt="calender">
+                        </div>
+                        <div class="pt-1 pl-2 pr-4">
+                            <p style="color:#828282">Comment(0)</p>
+                        </div>
+                        <div class="pt-1 text-right" style="flex: 1;">
+                            <a href="#"><img src="./assets/images/share_icon.png"  title="Share" uk-tooltip  style="height: 18px;" alt="share"></a>
+                        </div>
+                    </div>
+
+                    <!-- visible for mobile and small device -->
+                    <div class="d-flex flex-column mt-3 uk-hidden@m">
+                        <div class="d-flex flex-row">
+                            <div>
+                                <img src="./assets/images/commenter_person_icon.png" style="height: 22px;" alt="comment">
+                            </div>
+                            <div class="pt-1 pl-1">
+                                <p style="color:#828282">By Andru Leo</p>
+                            </div>
+                        </div>
+                        <!-- <div class="pt-1 pl-2">
+                            <p style="color:#828282">|</p>
+                        </div> -->
+                        <div class="d-flex flex-row">
+                            <div class="pt-1 pl-1 ">
+                                <img src="./assets/images/calender_icon.png" style="height: 18px;" alt="comment">
+                            </div>
+                            <div class="pt-1 pl-1">
+                                <p style="color:#828282">07 July, 2020</p>
+                            </div>
+                        </div>
+                        <!-- <div class="pt-1 pl-2">
+                            <p style="color:#828282">|</p>
+                        </div> -->
+                        <div class="d-flex flex-row">
+                            <div class="pt-1 pl-1">
+                                <img src="./assets/images/comment_icon.png" style="height: 18px;" alt="comment">
+                            </div>
+                            <div class="pt-1 pl-1">
+                                <p style="color:#828282">Comment(0)</p>
+                            </div>
+                            <div class="pt-1 text-right" style="flex: 1;">
+                                <a href="#"><img src="./assets/images/share_icon.png" title="Share" uk-tooltip style="height: 18px;"
+                                        alt="share"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="font-size-18">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, perferendis!
+                        Earum fuga enim laborum beatae autem! Vel, maxime culpa nihil, modi obcaecati voluptate quasi
+                        dolorem voluptatum iure, facere dolores doloremque. Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Inventore ea quae, nesciunt architecto animi cum, illo, consequuntur
+                        perferendis corrupti blanditiis est similique excepturi voluptate quo odio corporis sunt
+                        aspernatur omnis.</p>
+
+                    <p class="font-size-18">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam distinctio
+                        et praesentium odio error fugit dicta impedit eligendi obcaecati quod. Numquam cum iste unde
+                        debitis, veniam quos est quam cumque?
+                        Natus, sit eum velit vero adipisci officiis laudantium dolore repellendus sapiente omnis minima
+                        odit nulla voluptatibus similique qui quibusdam harum maxime blanditiis autem fuga mollitia
+                        fugit voluptate illo optio. Repellendus?
+                        Nemo culpa rem pariatur iusto omnis illo similique libero amet eius maiores eligendi eum, rerum
+                        odit magni ab blanditiis, tempore placeat saepe perspiciatis obcaecati, ut nihil recusandae
+                        suscipit at? Provident.
+                        Omnis nemo ipsum nihil porro maxime sint architecto cum tenetur totam nesciunt sit dolorum
+                        dolores ipsa incidunt eveniet iusto ab quo cupiditate laboriosam at dignissimos, exercitationem
+                        quisquam quod. Voluptates, explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatum facere maiores ut recusandae impedit numquam maxime sit aliquid quo, exercitationem
+                        mollitia repellat, officiis veniam. Mollitia pariatur placeat ipsam accusamus inventore. Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Commodi labore voluptate porro neque sequi
+                        laboriosam sit magni quaerat ipsa distinctio. Aliquid, velit eveniet! Fuga eum quibusdam quae
+                        sunt omnis voluptatibus!</p>
+
+                    <p class="font-size-18">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui
+                        accusamus hic nostrum nihil aperiam quam, sapiente obcaecati corporis, rerum molestiae
+                        consequuntur possimus laudantium cumque at sequi velit est esse.
+                        Fuga in tempore voluptatem quibusdam quis neque ea dicta ducimus expedita aliquid quas minima
+                        eum incidunt nostrum, iste harum, ullam animi atque. Minus recusandae, a qui tenetur temporibus
+                        natus at!
+                        Sint aut nesciunt, cum enim qui quam possimus numquam dolore nemo deleniti nobis dolorem dolorum
+                        vel saepe praesentium in, aliquid voluptate! Porro nulla rerum eligendi quibusdam laboriosam
+                        quam. Molestias, voluptates!</p>
+                </div>
+
+                <hr style="border-top: 1px solid #b9b9b9;">
+
+                <!-- reply section -->
+                <div class="uk-card text-left mt-5 mb-5">
+                    <h3 class="font-weight-bolder">Leave a Reply</h3>
+                    <form>
+                        <div class="uk-child-width-1-2@m uk-child-width-1-1 uk-grid-match uk-grid-small" uk-grid>
+                            <div>
+                                <div class="uk-margin ">
+                                    <div class="uk-inline uk-width-1-1 uk-border-rounded">
+                                        <span class="uk-form-icon form-icon pl-3"><img
+                                                src="./assets/images/person_icon.png" alt="input-img"></span>
+                                        <input type="text" class="uk-input py-4" style="border: 1px solid #c2c2c2;
+                                                            border-radius: 6px;padding-left: 47px !important;"
+                                            placeholder="Name" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-margin">
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon form-icon pl-3"><img
+                                                src="./assets/images/email_icon.png" alt="input-img"></span>
+                                        <input type="email" class="uk-input py-4" style="border: 1px solid #c2c2c2;
+                                                            border-radius: 6px;padding-left: 47px !important;"
+                                            placeholder="Email" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline uk-width-1-1">
+                                <span class="uk-form-icon form-icon pl-3" style="padding-bottom: 85px;"><img
+                                        src="./assets/images/msg_icon.png" alt="input-img"></span>
+                                <textarea class="uk-textarea"
+                                    style="border: 1px solid #c2c2c2;
+                                                    border-radius: 6px;padding-left: 47px !important;padding-top: 15px;" rows="5"
+                                    placeholder="Comment"></textarea>
+                            </div>
+                        </div>
+
+                        <li><button
+                                class="py-2 px-5 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"
+                                href="#">Submit</button>
+                        </li>
+
+                    </form>
+
+                </div>
+            </div>
+
+            <!-- search portion -->
+            <div class="uk-width-expand@m uk-width-1-1">
+                <div class="text-left">
+                    <h3 class="uk-text-bolder">Search</h3>
+                    <div class="input-group mb-5 ">
+                        <input type="text" class="form-control pt-1" placeholder="Search"
+                            style="height: 55px;border-top-left-radius: 7px;border-bottom-left-radius: 7px;"
+                            aria-label="Text input with dropdown button">
+                        <div class="input-group-append">
+                            <button class="btn uk-button-danger" type="button" id="button-addon2"
+                                style="padding-top: 11px;">
+                                <svg width="1em" height="1em" style="font-size: 1.5rem;" viewBox="0 0 16 16"
+                                    class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <hr style="border-top: 1px solid #b9b9b9;">
+                    <div class="my-5">
+                        <h3 class="uk-text-bolder">Categories</h3>
+                        <ul class="uk-list">
+                            <li class="my-4"><a href="#">
+                                    <i class="fas fa-chevron-right pr-1"></i> Education
+                                </a>
+                            </li>
+                            <li class="my-4"><a href="#">
+                                    <i class="fas fa-chevron-right pr-1"></i> Entertainment
+                                </a>
+                            </li>
+                            <li class="my-4"><a href="#">
+                                    <i class="fas fa-chevron-right pr-1"></i> Gardening
+                                </a>
+                            </li>
+                            <li class="my-4"><a href="#">
+                                    <i class="fas fa-chevron-right pr-1"></i> Real Estate
+                                </a>
+                            </li>
+                            <li class="my-4"><a href="#">
+                                    <i class="fas fa-chevron-right pr-1"></i> Technology
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr style="border-top: 1px solid #b9b9b9;">
+
+                    <div class="my-5">
+                        <h3 class="uk-text-bolder">Archives</h3>
+                        <ul class="uk-list">
+                            <li class="my-4"><a href="#">
+                                    <i class="fas fa-chevron-right pr-1"></i> June 2020
+                                </a>
+                            </li>
+                            <li class="my-4"><a href="#">
+                                    <i class="fas fa-chevron-right pr-1"></i> July 2020
+                                </a>
+                            </li>
+                            <li class="my-4"><a href="#">
+                                    <i class="fas fa-chevron-right pr-1"></i> August 2020
+                                </a>
+                            </li>
+                            <li class="my-4"><a href="#">
+                                    <i class="fas fa-chevron-right pr-1"></i> September 2020
+                                </a>
+                            </li>
+                            <li class="my-4"><a href="#">
+                                    <i class="fas fa-chevron-right pr-1"></i> October 2020
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <hr style="border-top: 1px solid #b9b9b9;">
+
+                    <div class="my-5">
+                        <h3 class="uk-text-bolder">Tags</h3>
+                        <button class="btn btn-outline-secondary card-button my-1">Laptop</button>
+                        <button class="btn btn-outline-secondary card-button my-1">Mobile</button>
+                        <button class="btn btn-outline-secondary card-button my-1">Coin</button>
+                        <button class="btn btn-outline-secondary card-button my-1">Laptop</button>
+                        <button class="btn btn-outline-secondary card-button my-1">Camera</button>
+                        <button class="btn btn-outline-secondary card-button my-1">Phone</button>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+
+    <!-- query and info section -->
+    <section style="background: #000;">
+        <div class="uk-container uk-container-large uk-padding-large pb-3">
+            <div class="uk-child-width-1-5@m uk-grid-large" uk-grid>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Quick Links
+                        <hr style="border-top: 1px solid #910404;width: 7rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="about_us.html" class="text-white footer_link">About Us</a></li>
+                        <li><a href="#" class="text-white footer_link">Advertising</a></li>
+                        <li><a href="#" class="text-white footer_link">How to use site?</a></li>
+                        <li><a href="#" class="text-white footer_link">Payment Methods</a></li>
+                        <li><a href="/blogs.html" class="text-white footer_link">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        UAE
+                        <hr style="border-top: 1px solid #910404; width: 2rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="#" class="text-white footer_link">Dubai</a></li>
+                        <li><a href="#" class="text-white footer_link">Abu Dhabi</a></li>
+                        <li><a href="#" class="text-white footer_link">Ras al Khaimah</a></li>
+                        <li><a href="#" class="text-white footer_link">Sharjah</a></li>
+                        <li><a href="#" class="text-white footer_link">Fujairah</a></li>
+                        <li><a href="#" class="text-white footer_link">Ajman</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Support
+                        <hr style="border-top: 1px solid #910404; width: 5rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="/contact_us.html" class="text-white footer_link">Contact Us</a></li>
+                        <li><a href="/terms_&_condition.html" class="text-white footer_link">Terms of Use</a></li>
+                        <li><a href="/privacy_policy.html" class="text-white footer_link">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white footer_link">Payment Methods</a></li>
+                        <li><a href="/blogs.html" class="text-white footer_link">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Others
+                        <hr style="border-top: 1px solid #910404; width: 4rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="#" class="text-white footer_link">Other Countries</a></li>
+                        <li><a href="#" class="text-white footer_link">Tags</a></li>
+                        <li><a href="#" class="text-white footer_link">Price and Specs</a></li>
+                        <li><a href="#" class="text-white footer_link">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="pl-5">
+                    <div class="py-4">
+                        <img src="./assets/images/logo_new.png" style="width: 176px; max-width: 176px;" alt="logo"><br>
+                        <div class="uk-inline pt-4">
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Facebook" uk-tooltip><i
+                                    class="lni lni-facebook-filled" style="color:grey;"></i></a>
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Twitter" uk-tooltip><i
+                                    class="lni lni-twitter-original" style="color:grey;"></i></a>
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Instagram" uk-tooltip><i
+                                    class="lni lni-instagram-original" style="color:grey;"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer style="background-color: #000;border-top: 1px solid #302f2f;padding: 37px 0px;">
+        <div class="uk-container uk-container-large">
+            <div class="uk-child-width-1-2" uk-grid>
+                <div class="text-left">
+                    <p class="text-white h6">&copy;2020 Tabadol</p>
+                </div>
+                <div class="uk-text-right">
+                    <p class="text-white h6">Designed and Developed by <a style="color:#1748A0 !important"
+                            href="https://royex.net">Royex Technologies</a> </p>
+                </div>
+            </div>
+        </div>
+        <!-- to-top-navigation -->
+        <a href="#" class="text-white to-top" uk-totop title="Go to Top" uk-tooltip uk-scroll></a>
+    </footer>
+
+
+
+
+</body>
+
+</html>

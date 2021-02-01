@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#16489F">
+    <meta name="Tabadol" content="Online Shopping Application" />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+    <!-- google font -->
+    <link rel="stylesheet" href="./assets/css/googleFonts.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="./assets/css/uikit.min.css">
+
+    <!-- font-Awesome Icons -->
+    <link rel="stylesheet" href="./assets/fontawesome-css/all.min.css" />
+
+    <!-- aos animation link -->
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+
+    <!-- line icons link -->
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+
+    <!-- main style  -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- All js files for all pages -->
+    
+    <!-- jquery js -->
+    <script src="./assets/js/jquery.min.js"></script>
+    
+    <!-- AOS animation js -->
+    <script src="./assets/js/aos.js"></script>
+    
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+    
+    <!-- bootstrap js -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    
+    <!-- uikit js -->
+    <script src="./assets/js/uikit.min.js"></script>
+    <script src="./assets/js/uikit-icons.min.js"></script>
+
+    <title>Top Traders</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="header" style="height: 109px;">
+        <div class="uk-container uk-container-large">
+            <nav uk-navbar>
+
+                <div class="uk-navbar-left" style="z-index:1000">
+
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#"><img src="./assets//images/logo_new.png"
+                                    style="padding-top: 30px;" alt="tabadol_logo"></a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right uk-hidden@m">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active btn btn-primary px-2 mt-4" style="padding: 12px"
+                            uk-toggle="target: #offcanvas-nav">Menu
+                            <i class="lni lni-menu"></i>
+                        </li>
+                        <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+                            <div class="uk-offcanvas-bar p-0"
+                                style="background-image: url('./assets//images/new-arrival-bg.png');">
+                                <section class="px-3 py-2" style="background: #fff;">
+                                    <a href="index.html"><img src="./assets//images/logo_new.png"
+                                            style="padding-top: 30px;" alt="tabadol_logo"></a>
+                                </section>
+                                <section class="px-3 py-2">
+                                    <div class="uk-width-1-2@s uk-width-2-5@m">
+                                        <ul class="uk-nav-parent-icon" uk-nav>
+                                            <li class="uk-parent">
+                                                <a href="#" class="uk-text-bolder"><img
+                                                        src="./assets/images/location_icon.png" alt="location_icon"
+                                                        style="height: 23px;padding-bottom:7px;padding-right: 5px;">
+                                                    Dubai</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="#" class="text-white">Abu Dhabi</a></li>
+                                                    <li><a href="#" class="text-white">Ras al Khaimah</a></li>
+                                                    <li><a href="#" class="text-white">Sharjah</a></li>
+                                                    <li><a href="#" class="text-white">Fujairah</a></li>
+                                                    <li><a href="#" class="text-white">Ajman</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class=" uk-text-bolder" href="#"><img
+                                                        src="./assets/images/help_icon.png"
+                                                        style="height: 20px;padding-right: 2px;" alt="help_icon">
+                                                    Help</a>
+                                            </li>
+                                            <li class="uk-parent">
+                                                <a class=" uk-text-bolder" href="#"><img
+                                                        src="./assets/images/money_aed_icon.png"
+                                                        style="height: 15px;padding-bottom:0px;padding-right: 2px;"
+                                                        alt="money_icon">
+                                                    AED</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="#" class="text-white">Dollar</a></li>
+                                                    <li><a href="#" class="text-white">Pound</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="uk-parent">
+                                                <a class=" uk-text-bolder" href="#"><img
+                                                        src="./assets/images/profile_icon.png" class="pr-1"
+                                                        alt="profile_icon">
+                                                    Profile</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="#" class="text-white">Profile</a></li>
+                                                    <li><a href="#" class="text-white">Logout</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="d-flex"><a class="uk-text-bolder" href="#">EN</a><a href="#"
+                                                    class="uk-text-bolder pl-2"> | عربى</a>
+                                            </li>
+                                            <li class="uk-parent">
+                                                <a class=" uk-text-bolder" href="#">More</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Gaming</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Collectables</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Electronics</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Furniture</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">E-Books</a>
+                                                    </li>
+
+                                                    <li><button
+                                                            class="mt-3 py-1 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"
+                                                            href="#">Post your
+                                                            ad</button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right uk-visible@m" style="position: relative;top: -23px;">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#" class="uk-text-bolder navbar-opacity"><img
+                                    src="./assets/images/location_icon.png" alt="location_icon"
+                                    style="height: 23px;padding-bottom:7px;padding-right: 5px;"> Dubai <img
+                                    src="./assets/images/icon_dropdown.png" style="padding-left: 7px;"
+                                    alt="money_icon"></a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;
+                                        filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#" class="text-white">Abu Dhabi</a></li>
+                                    <li><a href="#" class="text-white">Ras al Khaimah</a></li>
+                                    <li><a href="#" class="text-white">Sharjah</a></li>
+                                    <li><a href="#" class="text-white">Fujairah</a></li>
+                                    <li><a href="#" class="text-white">Ajman</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="uk-active "><a class=" uk-text-bolder navbar-opacity" href="#"><img
+                                    src="./assets/images/help_icon.png" style="height: 20px;padding-right: 2px;"
+                                    alt="help_icon">
+                                Help</a>
+                        </li>
+                        <li class="uk-active"><a class=" uk-text-bolder navbar-opacity" href="#"><img
+                                    src="./assets/images/money_icon.png"
+                                    style="height: 40px;padding-bottom:0px;padding-right: 2px;" alt="money_icon"> AED
+                                <img src="./assets/images/icon_dropdown.png" style="padding-left: 7px;"
+                                    alt="money_icon"></a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;
+                                        filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#" class="text-white">Dollar</a></li>
+                                    <li><a href="#" class="text-white">Pound</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="uk-active"><a class="uk-text-bolder  navbar-opacity" href="#">EN | عربى</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+            <nav class="nav-position uk-visible@m pt-1" uk-navbar style="position: relative;top: -61px">
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Gaming</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Collectables</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Electronics</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Furniture</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">E-Books</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class=" uk-text-bolder" href="#">
+                                <img src="./assets/images/profile_icon.png" alt="profile_icon">
+                            </a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#" class="text-white">Profile</a></li>
+                                    <li><a href="#" class="text-white">Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><button
+                                class="mt-3 py-1 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"
+                                href="#">Post your
+                                ad</button>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+        <br><br>
+    </header>
+
+    <!-- breadcum portion -->
+    <section class="breadcum uk-text-center uk-padding">
+        <h2 class="mb-0">Top Traders</h2>
+        <ul class="uk-breadcrumb mt-0">
+            <li><a href="/index.html" class="h6">Home</a></li>
+            <li class="h6 text-white">Top Traders</li>
+        </ul>
+    </section>
+
+    <!-- main body part -->
+    <section class="main_body uk-text-center uk-padding uk-container uk-container-large">
+        <h2 class="uk-text-bold mb-0">Top Traders</h2>
+        <h4 class="mt-2" style="color: grey;">Lorem ipsum dolor sit amet consectetur</h4>
+
+        <div uk-grid class="mb-5">
+            <div class="trader d-flex uk-width-expand@m">
+                <div class="pt-4 uk-width-1-1@s uk-width-1-4@m">
+                    <img src="./assets/images/trader-2.png" class="uk-border-circle card-image" alt="porfile_picture">
+                </div>
+                <div class="uk-card-body text-left uk-width-1-2@s uk-width-1-2@m pl-0">
+                    <h3 class="uk-card-title uk-text-bolder">Abdul Rahamon</h3>
+                    <p><img src="./assets/images/location_icon_2.png" class="pb-2 pr-1" alt=""> Kansas,Abilene
+                        House#18, Road#07, Dubai, UAE</p>
+                    <h5 class="my-2 uk-text-bolder">Total Product Listed: 50</h5>
+                </div>
+            </div>
+            <div class="uk-width-1-4@m">
+                <div class="text-right">
+                    <h4>Rate the trader</h4>
+                    <div class="uk-flex-inline">
+                        <div><i class="lni lni-star pr-2 star" style="cursor: pointer;"></i></div>
+                        <div><i class="lni lni-star pr-2 star" style="cursor: pointer;"></i></div>
+                        <div><i class="lni lni-star pr-2 star" style="cursor: pointer;"></i></div>
+                        <div><i class="lni lni-star pr-2 star" style="cursor: pointer;"></i></div>
+                        <div><i class="lni lni-star pr-2 star" style="cursor: pointer;"></i></div>
+                        <div><a href="" class="btn btn-outline-danger py-1 px-4 button-color-white
+                            " style="border-radius: 7px;">Submit</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border-top: 1px solid #9e9d9d;">
+
+        <div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-grid-medium text-left mt-5" uk-grid>
+            <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+                <div class="uk-card  border-radius uk-grid-collapse uk-card-default uk-box-shadow-hover-xlarge" uk-grid>
+                    <div class="uk-card-media-top uk-width-1-3@m">
+                        <img src="./assets/images/iphone_pic.png" style="height: 216px;" class="image-border-radius" alt="">
+                    </div>
+                    <div class="uk-width-expand@m uk-box-shadow-hover-xlarge image-card-border-radius">
+                        <div class="uk-card-body py-3 ">
+                            <div>
+                                <h3 class="uk-card-title uk-text-bolder font-size-17 mb-2">Lorem ipsum
+                                    dolor sit consectetur
+                                </h3>
+                                <p class="card-text mb-2 mt-1 uk-text-bolder"> <img src="./assets/images/location_icon.png" alt="">
+                                    Sheikh Zayed
+                                    Road </p>
+                                <p class="font-weight-bold mb-1 mt-1">Exchange with:<br>
+                                    <button class="btn btn-outline-danger text-center card-button">Laptop</button>
+                                    <button class="btn btn-outline-danger text-center card-button">Mobile</button>
+                                    <button class="btn btn-outline-danger text-center card-button">Coin</button>
+                                </p>
+                                <div class="py-2 d-flex">
+                                    <p class="mb-1"> <span class="h5 font-weight-bold"> Worth:</span>
+                                        <span class="font-weight-bold">AED</span> <span class="h4 font-weight-bolder"
+                                            style="color:#1749A0">8,600</span></p>
+                                    <div class="text-right pr-0 float-right" style="flex: 1;">
+                                        <button class="py-0 px-2 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger" href="#">View
+                                            Details</button>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+                <div class="uk-card  border-radius uk-grid-collapse uk-card-default uk-box-shadow-hover-xlarge" uk-grid>
+                    <div class="uk-card-media-top uk-width-1-3@m">
+                        <img src="./assets/images/camera_pic.png" style="height: 216px; " class="image-border-radius" alt="">
+                    </div>
+                    <div class="uk-width-expand@m uk-box-shadow-hover-xlarge image-card-border-radius">
+                        <div class="uk-card-body py-3 ">
+                            <div>
+                                <h3 class="uk-card-title uk-text-bolder font-size-17 mb-2">Lorem ipsum
+                                    dolor sit consectetur
+                                </h3>
+                                <p class="card-text mb-2 mt-1 uk-text-bolder"> <img src="./assets/images/location_icon.png" alt="">
+                                    Sheikh Zayed
+                                    Road </p>
+                                <p class="font-weight-bold mb-1 mt-1">Exchange with:<br>
+                                    <button class="btn btn-outline-danger text-center card-button">Laptop</button>
+                                    <button class="btn btn-outline-danger text-center card-button">Mobile</button>
+                                    <button class="btn btn-outline-danger text-center card-button">Coin</button>
+                                </p>
+                                <div class="py-2 d-flex">
+                                    <p class="mb-1"> <span class="h5 font-weight-bold"> Worth:</span>
+                                        <span class="font-weight-bold">AED</span> <span class="h4 font-weight-bolder"
+                                            style="color:#1749A0">8,600</span></p>
+                                    <div class="text-right pr-0 float-right" style="flex: 1;">
+                                        <button class="py-0 px-2 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"
+                                            href="#">View
+                                            Details</button>
+                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+                <div class="uk-card  border-radius uk-grid-collapse uk-card-default uk-box-shadow-hover-xlarge" uk-grid>
+                    <div class="uk-card-media-top uk-width-1-3@m">
+                        <img src="./assets/images/iphone_pic.png" style="height: 216px;" class="image-border-radius" alt="">
+                    </div>
+                    <div class="uk-width-expand@m uk-box-shadow-hover-xlarge image-card-border-radius">
+                        <div class="uk-card-body py-3 ">
+                            <div>
+                                <h3 class="uk-card-title uk-text-bolder font-size-17 mb-2">Lorem ipsum
+                                    dolor sit consectetur
+                                </h3>
+                                <p class="card-text mb-2 mt-1 uk-text-bolder"> <img src="./assets/images/location_icon.png" alt="">
+                                    Sheikh Zayed
+                                    Road </p>
+                                <p class="font-weight-bold mb-1 mt-1">Exchange with:<br>
+                                    <button class="btn btn-outline-danger text-center card-button">Laptop</button>
+                                    <button class="btn btn-outline-danger text-center card-button">Mobile</button>
+                                    <button class="btn btn-outline-danger text-center card-button">Coin</button>
+                                </p>
+                                <div class="py-2 d-flex">
+                                    <p class="mb-1"> <span class="h5 font-weight-bold"> Worth:</span>
+                                        <span class="font-weight-bold">AED</span> <span class="h4 font-weight-bolder"
+                                            style="color:#1749A0">8,600</span></p>
+                                    <div class="text-right pr-0 float-right" style="flex: 1;">
+                                        <button
+                                            class="py-0 px-2 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"
+                                            href="#">View
+                                            Details</button>
+            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+                <div class="uk-card  border-radius uk-grid-collapse uk-card-default uk-box-shadow-hover-xlarge" uk-grid>
+                    <div class="uk-card-media-top uk-width-1-3@m">
+                        <img src="./assets/images/camera_pic.png" style="height: 216px; " class="image-border-radius"
+                            alt="">
+                    </div>
+                    <div class="uk-width-expand@m uk-box-shadow-hover-xlarge image-card-border-radius">
+                        <div class="uk-card-body py-3 ">
+                            <div>
+                                <h3 class="uk-card-title uk-text-bolder font-size-17 mb-2">Lorem ipsum
+                                    dolor sit consectetur
+                                </h3>
+                                <p class="card-text mb-2 mt-1 uk-text-bolder"> <img src="./assets/images/location_icon.png" alt="">
+                                    Sheikh Zayed
+                                    Road </p>
+                                <p class="font-weight-bold mb-1 mt-1">Exchange with:<br>
+                                    <button class="btn btn-outline-danger text-center card-button">Laptop</button>
+                                    <button class="btn btn-outline-danger text-center card-button">Mobile</button>
+                                    <button class="btn btn-outline-danger text-center card-button">Coin</button>
+                                </p>
+                                <div class="py-2 d-flex">
+                                    <p class="mb-1"> <span class="h5 font-weight-bold"> Worth:</span>
+                                        <span class="font-weight-bold">AED</span> <span class="h4 font-weight-bolder"
+                                            style="color:#1749A0">8,600</span></p>
+                                    <div class="text-right pr-0 float-right" style="flex: 1;">
+                                        <button
+                                            class="py-0 px-2 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"
+                                            href="#">View
+                                            Details</button>
+            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+                <div class="uk-card  border-radius uk-grid-collapse uk-card-default uk-box-shadow-hover-xlarge" uk-grid>
+                    <div class="uk-card-media-top uk-width-1-3@m">
+                        <img src="./assets/images/iphone_pic.png" style="height: 216px;" class="image-border-radius" alt="">
+                    </div>
+                    <div class="uk-width-expand@m uk-box-shadow-hover-xlarge image-card-border-radius">
+                        <div class="uk-card-body py-3 ">
+                            <div>
+                                <h3 class="uk-card-title uk-text-bolder font-size-17 mb-2">Lorem ipsum
+                                    dolor sit consectetur
+                                </h3>
+                                <p class="card-text mb-2 mt-1 uk-text-bolder"> <img src="./assets/images/location_icon.png" alt="">
+                                    Sheikh Zayed
+                                    Road </p>
+                                <p class="font-weight-bold mb-1 mt-1">Exchange with:<br>
+                                    <button class="btn btn-outline-danger text-center card-button">Laptop</button>
+                                    <button class="btn btn-outline-danger text-center card-button">Mobile</button>
+                                    <button class="btn btn-outline-danger text-center card-button">Coin</button>
+                                </p>
+                                <div class="py-2 d-flex">
+                                    <p class="mb-1"> <span class="h5 font-weight-bold"> Worth:</span>
+                                        <span class="font-weight-bold">AED</span> <span class="h4 font-weight-bolder"
+                                            style="color:#1749A0">8,600</span></p>
+                                    <div class="text-right pr-0 float-right" style="flex: 1;">
+                                        <button
+                                            class="py-0 px-2 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"
+                                            href="#">View
+                                            Details</button>
+            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+                <div class="uk-card  border-radius uk-grid-collapse uk-card-default uk-box-shadow-hover-xlarge" uk-grid>
+                    <div class="uk-card-media-top uk-width-1-3@m">
+                        <img src="./assets/images/camera_pic.png" style="height: 216px; " class="image-border-radius" alt="">
+                    </div>
+                    <div class="uk-width-expand@m uk-box-shadow-hover-xlarge image-card-border-radius">
+                        <div class="uk-card-body py-3 ">
+                            <div>
+                                <h3 class="uk-card-title uk-text-bolder font-size-17 mb-2">Lorem ipsum
+                                    dolor sit consectetur
+                                </h3>
+                                <p class="card-text mb-2 mt-1 uk-text-bolder"> <img src="./assets/images/location_icon.png" alt="">
+                                    Sheikh Zayed
+                                    Road </p>
+                                <p class="font-weight-bold mb-1 mt-1">Exchange with:<br>
+                                    <button class="btn btn-outline-danger text-center card-button">Laptop</button>
+                                    <button class="btn btn-outline-danger text-center card-button">Mobile</button>
+                                    <button class="btn btn-outline-danger text-center card-button">Coin</button>
+                                </p>
+                                <div class="py-2 d-flex">
+                                    <p class="mb-1"> <span class="h5 font-weight-bold"> Worth:</span>
+                                        <span class="font-weight-bold">AED</span> <span class="h4 font-weight-bolder"
+                                            style="color:#1749A0">8,600</span></p>
+                                    <div class="text-right pr-0 float-right" style="flex: 1;">
+                                        <button
+                                            class="py-0 px-2 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"
+                                            href="#">View
+                                            Details</button>
+            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- pagination area -->
+    <section class="uk-container uk-container-large">
+        <div class="uk-child-width-1-3@m uk-child-width-1-1 uk-grid-collups" uk-grid>
+            <div class="uk-visible@m"></div>
+            <div>
+                <div class="pagination uk-margin-large-bottom uk-margin-top mb-5">
+                    <a href="#" style="padding: 8px 11px;"><i class="lni lni-arrow-left"></i></a>
+                    <a href="#">1</a>
+                    <a class="active" href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#" style="padding: 8px 11px; color: #EB325E"><i class="lni lni-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="uk-visible@m"></div>
+        </div>
+    </section>
+
+    <!-- query and info section -->
+    <section style="background: #000;">
+        <div class="uk-container uk-container-large uk-padding-large pb-3">
+            <div class="uk-child-width-1-5@m uk-grid-large" uk-grid>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Quick Links
+                        <hr style="border-top: 1px solid #910404;width: 7rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="about_us.html" class="text-white footer_link">About Us</a></li>
+                        <li><a href="#" class="text-white footer_link">Advertising</a></li>
+                        <li><a href="#" class="text-white footer_link">How to use site?</a></li>
+                        <li><a href="#" class="text-white footer_link">Payment Methods</a></li>
+                        <li><a href="#" class="text-white footer_link">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        UAE
+                        <hr style="border-top: 1px solid #910404; width: 2rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="#" class="text-white footer_link">Dubai</a></li>
+                        <li><a href="#" class="text-white footer_link">Abu Dhabi</a></li>
+                        <li><a href="#" class="text-white footer_link">Ras al Khaimah</a></li>
+                        <li><a href="#" class="text-white footer_link">Sharjah</a></li>
+                        <li><a href="#" class="text-white footer_link">Fujairah</a></li>
+                        <li><a href="#" class="text-white footer_link">Ajman</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Support
+                        <hr style="border-top: 1px solid #910404; width: 5rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="contact_us.html" class="text-white footer_link">Contact Us</a></li>
+                        <li><a href="#" class="text-white footer_link">Terms of Use</a></li>
+                        <li><a href="#" class="text-white footer_link">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white footer_link">Payment Methods</a></li>
+                        <li><a href="#" class="text-white footer_link">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Others
+                        <hr style="border-top: 1px solid #910404; width: 4rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="#" class="text-white footer_link">Other Countries</a></li>
+                        <li><a href="#" class="text-white footer_link">Tags</a></li>
+                        <li><a href="#" class="text-white footer_link">Price and Specs</a></li>
+                        <li><a href="#" class="text-white footer_link">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="pl-5">
+                    <div class="py-4">
+                        <img src="./assets/images/logo_new.png" style="width: 176px; max-width: 176px;" alt="logo"><br>
+                        <div class="uk-inline pt-4">
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Facebook" uk-tooltip><i
+                                    class="lni lni-facebook-filled" style="color:grey;"></i></a>
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Twitter" uk-tooltip><i
+                                    class="lni lni-twitter-original" style="color:grey;"></i></a>
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Instagram" uk-tooltip><i
+                                    class="lni lni-instagram-original" style="color:grey;"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer style="background-color: #000;border-top: 1px solid #302f2f;padding: 37px 0px;">
+        <div class="uk-container uk-container-large">
+            <div class="uk-child-width-1-2" uk-grid>
+                <div class="text-left">
+                    <p class="text-white h6">&copy;2020 Tabadol</p>
+                </div>
+                <div class="uk-text-right">
+                    <p class="text-white h6">Designed and Developed by <a style="color:#1748A0 !important"
+                            href="https://royex.net">Royex Technologies</a> </p>
+                </div>
+            </div>
+        </div>
+        <!-- to-top-navigation -->
+        <a href="#" class="text-white to-top" uk-totop title="Go to Top" uk-tooltip uk-scroll></a>
+    </footer>
+
+    <script>
+        let stars = document.querySelectorAll('.star');
+            for (let i = 0; i <= stars.length; i++) {
+                stars[i].addEventListener('click', e => {
+                    e.preventDefault();
+                    stars[i].classList.remove('lni-star')
+                    stars[i].classList.add('lni-star-filled')
+                });
+            }
+    </script>
+
+    <!-- ==================================================================================================== -->
+    <!-- All js files for all pages -->
+
+    <!-- ==================================================================================================== -->
+</body>
+
+</html>

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#16489F">
+    <meta name="Tabadol" content="Online Shopping Application" />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+    <!-- google font -->
+    <link rel="stylesheet" href="./assets/css/googleFonts.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="./assets/css/uikit.min.css">
+
+    <!-- font-Awesome Icons -->
+    <link rel="stylesheet" href="./assets/fontawesome-css/all.min.css" />
+
+    <!-- aos animation link -->
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+
+    <!-- line icons link -->
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+
+    <!-- main style  -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- All js files for all pages -->
+    
+    <!-- jquery js -->
+    <script src="./assets/js/jquery.min.js"></script>
+    
+    <!-- AOS animation js -->
+    <script src="./assets/js/aos.js"></script>
+    
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+    
+    <!-- bootstrap js -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    
+    <!-- uikit js -->
+    <script src="./assets/js/uikit.min.js"></script>
+    <script src="./assets/js/uikit-icons.min.js"></script>
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="header" style="height: 109px;">
+        <div class="uk-container uk-container-large">
+            <nav uk-navbar>
+
+                <div class="uk-navbar-left" style="z-index:1000" style="z-index:1000">
+
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#"><img src="./assets/images/logo_new.png"
+                                    style="padding-top: 30px;" alt="tabadol_logo"></a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right uk-hidden@m">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active btn btn-primary px-2 mt-4" style="padding: 12px"
+                            uk-toggle="target: #offcanvas-nav">Menu
+                            <i class="lni lni-menu"></i>
+                        </li>
+                        <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+                            <div class="uk-offcanvas-bar p-0"
+                                style="background-image: url('./assets//images/new-arrival-bg.png');">
+                                <section class="px-3 py-2" style="background: #fff;">
+                                    <a href="/index.html"><img src="./assets//images/logo_new.png"
+                                            style="padding-top: 30px;" alt="tabadol_logo"></a>
+                                </section>
+                                <section class="px-3 py-2">
+                                    <div class="uk-width-1-2@s uk-width-2-5@m">
+                                        <ul class="uk-nav-parent-icon" uk-nav>
+                                            <li>
+                                                <a href="/dashboard.html" class="">
+                                                    <i class="fas fa-chevron-right pr-1"></i> Dashboard
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/listing_product_vartical.html.html"
+                                                    class="">
+                                                    <i class="fas fa-chevron-right pr-1"></i> My Listings
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/my_swap_request.html" class="">
+                                                    <i class="fas fa-chevron-right pr-1"></i> Swap Request
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/favourites_vertical_list.html" class="">
+                                                    <i class="fas fa-chevron-right pr-1"></i> Favourites
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/account_details.html" class="nav-list-menu-active">
+                                                    <i class="fas fa-chevron-right pr-1"></i> Account Details
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/login_register.html" class="">
+                                                    <i class="fas fa-chevron-right pr-1"></i> Logout
+                                                </a>
+                                            </li>
+                                            <hr>
+                                            <li class="uk-parent">
+                                                <a href="#" class="uk-text-bolder"><img
+                                                        src="./assets/images/location_icon.png" alt="location_icon"
+                                                        style="height: 23px;padding-bottom:7px;padding-right: 5px;">
+                                                    Dubai</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="#" class="text-white">Abu Dhabi</a></li>
+                                                    <li><a href="#" class="text-white">Ras al Khaimah</a></li>
+                                                    <li><a href="#" class="text-white">Sharjah</a></li>
+                                                    <li><a href="#" class="text-white">Fujairah</a></li>
+                                                    <li><a href="#" class="text-white">Ajman</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class=" uk-text-bolder" href="#"><img
+                                                        src="./assets/images/help_icon.png"
+                                                        style="height: 20px;padding-right: 2px;" alt="help_icon">
+                                                    Help</a>
+                                            </li>
+                                            <li class="uk-parent">
+                                                <a class=" uk-text-bolder" href="#"><img
+                                                        src="./assets/images/money_aed_icon.png"
+                                                        style="height: 15px;padding-bottom:0px;padding-right: 2px;"
+                                                        alt="money_icon">
+                                                    AED</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="#" class="text-white">Dollar</a></li>
+                                                    <li><a href="#" class="text-white">Pound</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class=" uk-text-bolder" href="#"><img
+                                                        src="./assets/images/profile_icon.png" class="pr-1"
+                                                        alt="profile_icon"> Profile</a></li>
+                                            <li class="d-flex"><a class="uk-text-bolder" href="#">EN</a><a href="#"
+                                                    class="uk-text-bolder pl-2"> |
+                                                    عربى</a>
+                                            </li>
+                                            <li class="uk-parent">
+                                                <a class=" uk-text-bolder" href="#">More</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Gaming</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Collectables</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Electronics</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Furniture</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">E-Books</a>
+                                                    </li>
+
+                                                    <li><button
+                                                            class="mt-3 py-1 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"
+                                                            href="#">Post your
+                                                            ad</button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right uk-visible@m" style="position: relative;top: -23px;">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#" class="uk-text-bolder navbar-opacity"><img
+                                    src="./assets/images/location_icon.png" alt="location_icon"
+                                    style="height: 23px;padding-bottom:7px;padding-right: 5px;"> Dubai <img
+                                    src="./assets/images/icon_dropdown.png" style="padding-left: 7px;"
+                                    alt="money_icon"></a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;
+                                        filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#" class="text-white">Abu Dhabi</a></li>
+                                    <li><a href="#" class="text-white">Ras al Khaimah</a></li>
+                                    <li><a href="#" class="text-white">Sharjah</a></li>
+                                    <li><a href="#" class="text-white">Fujairah</a></li>
+                                    <li><a href="#" class="text-white">Ajman</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="uk-active "><a class=" uk-text-bolder navbar-opacity" href="#"><img
+                                    src="./assets/images/help_icon.png" style="height: 20px;padding-right: 2px;"
+                                    alt="help_icon">
+                                Help</a>
+                        </li>
+                        <li class="uk-active"><a class=" uk-text-bolder navbar-opacity" href="#"><img
+                                    src="./assets/images/money_icon.png"
+                                    style="height: 40px;padding-bottom:0px;padding-right: 2px;" alt="money_icon"> AED
+                                <img src="./assets/images/icon_dropdown.png" style="padding-left: 7px;"
+                                    alt="money_icon"></a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;
+                                        filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#" class="text-white">Dollar</a></li>
+                                    <li><a href="#" class="text-white">Pound</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="uk-active"><a class="uk-text-bolder  navbar-opacity" href="#">EN | عربى</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+            <nav class="nav-position uk-visible@m pt-1" uk-navbar style="position: relative;top: -61px">
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Gaming</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Collectables</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Electronics</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Furniture</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">E-Books</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class=" uk-text-bolder" href="#">
+                                <img src="./assets/images/profile_icon.png" alt="profile_icon">
+                            </a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="/dashboard.html" class="text-white">Profile</a></li>
+                                    <li><a href="/login_register.html" class="text-white">Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><button
+                                class="mt-3 py-1 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"
+                                href="#">Post your
+                                ad</button>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+        <br><br>
+    </header>
+
+    <!-- breadcum portion -->
+    <section class="breadcum uk-text-center uk-padding">
+        <h2 class="mb-0">My Account</h2>
+        <ul class="uk-breadcrumb mt-0">
+            <li><a href="/index.html">Home</a></li>
+            <li class="h6 text-white">My Account</li>
+        </ul>
+    </section>
+
+    <!-- main body part -->
+    <section class="main_body  uk-padding uk-container uk-margin-large-bottom uk-container-large">
+
+        <h2 class="uk-text-bolder mb-0 uk-text-center">Account Details</h2>
+        <h4 class="mt-2 uk-text-center" style="color: grey;">Lorem ipsum dolor sit amet consectetur</h4>
+
+        <!-- nav-side-list -->
+        <div class="mt-5">
+            <div class="uk-grid-match uk-grid-medium" uk-grid>
+                <div class="uk-width-1-4@m uk-visible@m">
+                    <div class="uk-card text-left">
+                        <ul class="uk-list uk-list-striped uk-border-rounded mb-0">
+                            <li class="px-4 nav-list-menu font-weight-bolder">Menu</li>
+                            <li class="px-4 border">
+                                <a href="/dashboard.html" class="">
+                                    <i class="fas fa-chevron-right pr-1"></i> Dashboard
+                                </a>
+                            </li>
+                            <li class="px-4 border">
+                                <a href="/listing_product_vartical.html" class="">
+                                    <i class="fas fa-chevron-right pr-1"></i> My Listings
+                                </a>
+                            </li>
+                            <li class="px-4 border">
+                                <a href="dashboard.html" class="">
+                                    <i class="fas fa-chevron-right pr-1"></i> Swap Request
+                                </a>
+                            </li>
+                            <li class="px-4 border">
+                                <a href="/favourites_vartical_list.html" class="">
+                                    <i class="fas fa-chevron-right pr-1"></i> Favourites
+                                </a>
+                            </li>
+                            <li class="px-4 border">
+                                <a href="/account_details.html" class="nav-list-menu-active">
+                                    <i class="fas fa-chevron-right pr-1"></i> Account Details
+                                </a>
+                            </li>
+                            <li class="px-4 border">
+                                <a href="/login_register.html" class="">
+                                    <i class="fas fa-chevron-right pr-1"></i> Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="uk-width-expand@m">
+                    <div class="uk-child-width-1-2@m uk-grid-medium" uk-grid>
+                        <div>
+                            <h3 class="text-left uk-text-bolder">Basic Information</h3>
+                            <div class="uk-margin">
+                                <label for="name" class="font-size-18">Name:</label>
+                                <div class="uk-inline uk-width-1-1 uk-border-rounded">
+                                    <span class="uk-form-icon form-icon pl-3"><img src="./assets/images/person_icon.png"
+                                            alt="input-img"></span>
+                                    <input type="text" class="uk-input py-4 custom-input" id="name"
+                                        placeholder="Abdul Islam" required>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label for="email" class="font-size-18">Email:</label>
+                                <div class="uk-inline uk-width-1-1 uk-border-rounded">
+                                    <span class="uk-form-icon form-icon pl-3"><img src="./assets/images/email_icon.png"
+                                            alt="input-img"></span>
+                                    <input type="email" class="uk-input py-4 custom-input" id="email"
+                                        placeholder="abdulislam@mail.com" required>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label for="phone" class="font-size-18">Phone no:</label>
+                                <div class="uk-inline uk-width-1-1 uk-border-rounded">
+                                    <span class="uk-form-icon form-icon pl-3"><img src="./assets/images/phone_logo.png"
+                                            alt="input-img"></span>
+                                    <input type="tel" class="uk-input py-4 custom-input" id="phone"
+                                        placeholder="+971 005 4830685" required>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label for="phone" class="font-size-18">Whatsapp no:</label>
+                                <div class="uk-inline uk-width-1-1 uk-border-rounded">
+                                    <span class="uk-form-icon form-icon pl-3"><img src="./assets/images/phone_logo.png"
+                                            alt="input-img"></span>
+                                    <input type="tel" class="uk-input py-4 custom-input" id="phone"
+                                        placeholder="+971 005 4830685" required>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label for="oldPass" class="font-size-18">Upload Your Image</label>
+                                <div class="uk-grid-small" uk-grid>
+                                    <div class="uk-width-1-3@m uk-width-1-1">
+                                        <div>
+                                            <img id="profilePic" style="border-radius: 50%;" src="./assets/images/default_uploading_photo.png"
+                                                alt="default_upload_photo">
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-expand@m uk-width-1-1">
+                                        <div class="text-right">
+                                            <div class="uk-margin">
+                                                <div uk-form-custom>
+                                                    <input type="file" onchange="readURL(this)">
+                                                    <button
+                                                        class="btn py-2 uk-border-rounded btn-secondary uk-box-shadow-hover-xlarge"
+                                                        type="button" tabindex="-1"
+                                                        style="background-color: #3D3D3D;">Browse Files</button>
+                                                </div>
+                                            </div>
+                                            <p class="mb-1" style="font-size: 12px;">Image maximum size 3MB,Image
+                                                type(png,jgp,jpeg)</p>
+                                            <p class="mt-2" style="font-size: 13px;">Warning: Don't post product
+                                                pictures in the profile pic section.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label for="oldPass" class="font-size-18">Old Password:</label>
+                                <div class="uk-inline uk-width-1-1 uk-border-rounded">
+                                    <span class="uk-form-icon form-icon pl-3"><img  src="./assets/images/lock_icon.png"
+                                            alt="input-img"></span>
+                                    <input type="password" class="uk-input py-4 custom-input" id="oldPass"
+                                        placeholder="test_123456" required>
+                                    <span class="uk-icon-right form-icon pl-3" style="cursor: pointer;"
+                                        onClick='showOldPass()'><img src="./assets/images/show_password.png"
+                                            alt="input-img"></span>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label for="newPass" class="font-size-18">New Password:</label>
+                                <div class="uk-inline uk-width-1-1 uk-border-rounded">
+                                    <span class="uk-form-icon form-icon pl-3"><img src="./assets/images/lock_icon.png"
+                                            alt="input-img"></span>
+                                    <input type="password" class="uk-input py-4 custom-input" id="newPass"
+                                        placeholder="test_123456" required>
+                                    <span class="uk-icon-right form-icon pl-3" style="cursor: pointer;"
+                                        onclick="showNewPass()"><img src="./assets/images/show_password.png"
+                                            alt="input-img"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-left uk-text-bolder">Location</h3>
+                            <div class="uk-child-width-1-3@m uk-child-width-1-1 uk-grid-match uk-grid-small" uk-grid>
+                                <div>
+                                    <label for="city" class="font-size-18">City</label>
+                                    <div class="input-group" style="height: 50px;">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text"
+                                                style="background-color: transparent;border-top-left-radius: 7px;border-bottom-left-radius: 7px; border-right: none;"
+                                                for="inputGroupSelect01"><img src="./assets/images/location_icon_2.png"
+                                                    alt="input-img"></label>
+                                        </div>
+                                        <select class="custom-select"
+                                            style="height: 50px;border-top-right-radius: 7px;border-bottom-right-radius: 7px;border-left: none; padding-left: 2px;"
+                                            id="inputGroupSelect01">
+                                            <option value="Dubai" selected>Dubai</option>
+                                            <option value="Abu Dhabi">Abu Dhabi</option>
+                                            <option value="Ras al Khaimah">Ras al Khaimah</option>
+                                            <option value="Sarjah">Sarjah</option>
+                                            <option value="Fujairah">Fujairah</option>
+                                            <option value="Ajman">Ajman</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-margin ">
+                                        <label for="street" class="font-size-18">Street</label>
+                                        <div class="uk-inline uk-width-1-1@s">
+                                            <span class="uk-form-icon form-icon pl-3"><img
+                                                    src="./assets/images/location_icon_2.png" alt="input-img"></span>
+                                            <input type="tel" id="street" class="uk-input py-4 custom_input"
+                                                placeholder="Karama" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-margin">
+                                        <label for="zip" class="font-size-18">Zip Code</label>
+                                        <div class="uk-inline uk-width-1-1@s">
+                                            <span class="uk-form-icon form-icon pl-3"><img
+                                                    src="./assets/images/location_icon_2.png" alt="input-img"></span>
+                                            <input type="tel" id="zip" class="uk-input py-4 custom_input"
+                                                placeholder="123456" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <label for="address" class="font-size-18">Address</label>
+                                <div class="uk-inline uk-width-1-1 uk-border-rounded">
+                                    <span class="uk-form-icon form-icon pl-3"><img src="./assets/images/phone_logo.png"
+                                            alt="input-img"></span>
+                                    <input type="tel" id="address" class="uk-input py-4 custom-input" id="phone"
+                                        placeholder="El-Mahalla El-Kubra 37,1776 Damietta,Dubai,UAE" required>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="font-size-18">Map</label>
+                                <div id="map" class="uk-border-rounded" style="width:auto;height:400px;background:grey">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- query and info section -->
+    <section style="background: #000;">
+        <div class="uk-container uk-container-large uk-padding-large pb-3">
+            <div class="uk-child-width-1-5@m uk-grid-large" uk-grid>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Quick Links
+                        <hr style="border-top: 1px solid #910404;width: 7rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="about_us.html" class="text-white footer_link">About Us</a></li>
+                        <li><a href="#" class="text-white footer_link">Advertising</a></li>
+                        <li><a href="#" class="text-white footer_link">How to use site?</a></li>
+                        <li><a href="#" class="text-white footer_link">Payment Methods</a></li>
+                        <li><a href="/blogs.html" class="text-white footer_link">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        UAE
+                        <hr style="border-top: 1px solid #910404; width: 2rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="#" class="text-white footer_link">Dubai</a></li>
+                        <li><a href="#" class="text-white footer_link">Abu Dhabi</a></li>
+                        <li><a href="#" class="text-white footer_link">Ras al Khaimah</a></li>
+                        <li><a href="#" class="text-white footer_link">Sharjah</a></li>
+                        <li><a href="#" class="text-white footer_link">Fujairah</a></li>
+                        <li><a href="#" class="text-white footer_link">Ajman</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Support
+                        <hr style="border-top: 1px solid #910404; width: 5rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="/contact_us.html" class="text-white footer_link">Contact Us</a></li>
+                        <li><a href="/terms_&_condition.html" class="text-white footer_link">Terms of Use</a></li>
+                        <li><a href="/privacy_policy.html" class="text-white footer_link">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white footer_link">Payment Methods</a></li>
+                        <li><a href="/blogs.html" class="text-white footer_link">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Others
+                        <hr style="border-top: 1px solid #910404; width: 4rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="#" class="text-white footer_link">Other Countries</a></li>
+                        <li><a href="#" class="text-white footer_link">Tags</a></li>
+                        <li><a href="#" class="text-white footer_link">Price and Specs</a></li>
+                        <li><a href="#" class="text-white footer_link">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="pl-5">
+                    <div class="py-4">
+                        <img src="./assets/images/logo_new.png" style="width: 176px; max-width: 176px;" alt="logo"><br>
+                        <div class="uk-inline pt-4">
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Facebook" uk-tooltip><i
+                                    class="lni lni-facebook-filled" style="color:grey;"></i></a>
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Twitter" uk-tooltip><i
+                                    class="lni lni-twitter-original" style="color:grey;"></i></a>
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Instagram" uk-tooltip><i
+                                    class="lni lni-instagram-original" style="color:grey;"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer style="background-color: #000;border-top: 1px solid #302f2f;padding: 37px 0px;">
+        <div class="uk-container uk-container-large">
+            <div class="uk-child-width-1-2" uk-grid>
+                <div class="text-left">
+                    <p class="text-white h6">&copy;2020 Tabadol</p>
+                </div>
+                <div class="uk-text-right">
+                    <p class="text-white h6">Designed and Developed by <a style="color:#1748A0 !important"
+                            href="https://royex.net">Royex Technologies</a> </p>
+                </div>
+            </div>
+        </div>
+        <!-- to-top-navigation -->
+        <a href="#" class="text-white to-top" uk-totop title="Go to Top" uk-tooltip uk-scroll></a>
+    </footer>
+
+    <!-- script for loading google map -->
+    <script>
+        function myMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(51.5, -0.12),
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }  
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#profilePic')
+                        .attr('src', e.target.result)
+                        .height(160);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+
+    <!-- ==================================================================================================== -->
+
+
+    <!-- ==================================================================================================== -->
+
+</body>
+
+</html>

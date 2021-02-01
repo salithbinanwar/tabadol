@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#16489F">
+    <meta name="Tabadol" content="Online Shopping Application">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+    <!-- google font -->
+    <link rel="stylesheet" href="./assets/css/googleFonts.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="./assets/css/uikit.min.css">
+
+    <!-- font-Awesome Icons -->
+    <link rel="stylesheet" href="./assets/fontawesome-css/all.min.css" />
+
+    <!-- aos animation link -->
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+
+    <!-- line icons link -->
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+
+    <!-- main style  -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- jquery js -->
+    <script src="./assets/js/jquery.min.js"></script>
+
+    <!-- AOS animation js -->
+    <script src="./assets/js/aos.js"></script>
+    
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+    
+    <!-- bootstrap js -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    
+    <!-- uikit js -->
+    <script src="./assets/js/uikit.min.js"></script>
+    <script src="./assets/js/uikit-icons.min.js"></script>
+
+
+    <title>Product Details</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="header" style="height: 109px;">
+        <div class="uk-container uk-container-large">
+            <nav uk-navbar>
+
+                <div class="uk-navbar-left" style="z-index:1000">
+
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#"><img src="./assets//images/logo_new.png"
+                                    style="padding-top: 30px;" alt="tabadol_logo"></a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right uk-hidden@m">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active btn btn-primary px-2 mt-4" style="padding: 12px"
+                            uk-toggle="target: #offcanvas-nav">Menu
+                            <i class="lni lni-menu"></i>
+                        </li>
+                        <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+                            <div class="uk-offcanvas-bar p-0"
+                                style="background-image: url('./assets//images/new-arrival-bg.png');">
+                                <section class="px-3 py-2" style="background: #fff;">
+                                    <a href="index.html"><img src="./assets//images/logo_new.png"
+                                            style="padding-top: 30px;" alt="tabadol_logo"></a>
+                                </section>
+                                <section class="px-3 py-2">
+                                    <div class="uk-width-1-2@s uk-width-2-5@m">
+                                        <ul class="uk-nav-parent-icon" uk-nav>
+                                            <li class="uk-parent">
+                                                <a href="#" class="uk-text-bolder"><img
+                                                        src="./assets/images/location_icon.png" alt="location_icon"
+                                                        style="height: 23px;padding-bottom:7px;padding-right: 5px;">
+                                                    Dubai</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="#" class="text-white">Abu Dhabi</a></li>
+                                                    <li><a href="#" class="text-white">Ras al Khaimah</a></li>
+                                                    <li><a href="#" class="text-white">Sharjah</a></li>
+                                                    <li><a href="#" class="text-white">Fujairah</a></li>
+                                                    <li><a href="#" class="text-white">Ajman</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class=" uk-text-bolder" href="#"><img
+                                                        src="./assets/images/help_icon.png"
+                                                        style="height: 20px;padding-right: 2px;" alt="help_icon">
+                                                    Help</a>
+                                            </li>
+                                            <li class="uk-parent">
+                                                <a class=" uk-text-bolder" href="#"><img
+                                                        src="./assets/images/money_aed_icon.png"
+                                                        style="height: 15px;padding-bottom:0px;padding-right: 2px;"
+                                                        alt="money_icon">
+                                                    AED</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="#" class="text-white">Dollar</a></li>
+                                                    <li><a href="#" class="text-white">Pound</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="uk-parent">
+                                                <a class=" uk-text-bolder" href="#"><img
+                                                        src="./assets/images/profile_icon.png" class="pr-1"
+                                                        alt="profile_icon">
+                                                    Profile</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li><a href="#" class="text-white">Profile</a></li>
+                                                    <li><a href="#" class="text-white">Logout</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="d-flex"><a class="uk-text-bolder" href="#">EN</a><a href="#"
+                                                    class="uk-text-bolder pl-2"> | عربى</a>
+                                            </li>
+                                            <li class="uk-parent">
+                                                <a class=" uk-text-bolder" href="#">More</a>
+                                                <ul class="uk-nav-sub">
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Gaming</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Collectables</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Electronics</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">Furniture</a>
+                                                    </li>
+                                                    <li class="uk-active px-2">
+                                                        <a class="uk-text-bolder" style="font-size: 1rem;"
+                                                            href="#">E-Books</a>
+                                                    </li>
+
+                                                    <li><button
+                                                            class="mt-3 py-1 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"
+                                                            href="#">Post your
+                                                            ad</button>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right uk-visible@m" style="position: relative;top: -23px;">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#" class="uk-text-bolder navbar-opacity"><img
+                                    src="./assets/images/location_icon.png" alt="location_icon"
+                                    style="height: 23px;padding-bottom:7px;padding-right: 5px;"> Dubai <img
+                                    src="./assets/images/icon_dropdown.png" style="padding-left: 7px;"
+                                    alt="money_icon"></a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;
+                                        filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#" class="text-white">Abu Dhabi</a></li>
+                                    <li><a href="#" class="text-white">Ras al Khaimah</a></li>
+                                    <li><a href="#" class="text-white">Sharjah</a></li>
+                                    <li><a href="#" class="text-white">Fujairah</a></li>
+                                    <li><a href="#" class="text-white">Ajman</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="uk-active "><a class=" uk-text-bolder navbar-opacity" href="#"><img
+                                    src="./assets/images/help_icon.png" style="height: 20px;padding-right: 2px;"
+                                    alt="help_icon">
+                                Help</a>
+                        </li>
+                        <li class="uk-active"><a class=" uk-text-bolder navbar-opacity" href="#"><img
+                                    src="./assets/images/money_icon.png"
+                                    style="height: 40px;padding-bottom:0px;padding-right: 2px;" alt="money_icon"> AED
+                                <img src="./assets/images/icon_dropdown.png" style="padding-left: 7px;"
+                                    alt="money_icon"></a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;
+                                        filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#" class="text-white">Dollar</a></li>
+                                    <li><a href="#" class="text-white">Pound</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="uk-active"><a class="uk-text-bolder  navbar-opacity" href="#">EN | عربى</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+            <nav class="nav-position uk-visible@m pt-1" uk-navbar style="position: relative;top: -61px">
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Gaming</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Collectables</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Electronics</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">Furniture</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class="uk-text-bolder text-black" style="font-size: 1rem;" href="#">E-Books</a>
+                        </li>
+                        <li class="uk-active">
+                            <a class=" uk-text-bolder" href="#">
+                                <img src="./assets/images/profile_icon.png" alt="profile_icon">
+                            </a>
+                            <div class="uk-navbar-dropdown mt-0" style="background-color: #2752A0;filter: opacity(.9);">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#" class="text-white">Profile</a></li>
+                                    <li><a href="#" class="text-white">Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="/" class="button-color-white text-white"><button
+                                class="py-1 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger" href="#"> Post your
+                                ad</button></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+        <br><br>
+    </header>
+
+    <!-- breadcum portion -->
+    <section class="breadcum uk-text-center uk-padding">
+        <h2 class="mb-0">Product Details</h2>
+        <ul class="uk-breadcrumb mt-0">
+            <li><a href="/index.html">Home</a></li>
+            <li class="h6 text-white">Product Details</li>
+        </ul>
+    </section>
+
+    <!-- main body part -->
+    <section class="main_body uk-text-center uk-padding uk-container uk-margin-auto-top uk-container-large">
+        <div class="uk-grid-medium" uk-grid>
+            <div class="uk-width-3-4@m">
+                <div>
+                    <div id="heart" class="float-right"><i class="lni lni-heart" id="love" style="font-size: 30px;position: relative;z-index: 1000;right: 24px;top: 55px;cursor: pointer;"></i></div>
+                    <div>
+                        <img src="./assets/images/product_details_1.png" id='mainImage' style="height: auto;width: auto; border-radius: 7px;" class="img-fluid" alt="product_details">
+                    </div>
+                </div>
+                <div uk-slider>
+                
+                    <div class="uk-position-relative mt-3 mx-5">
+                
+                        <div class="uk-slider-container uk-light">
+                            <ul class="uk-slider-items uk-grid-small uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-5@m">
+                                <li>
+                                    <img src="./assets/images/product_details_1.png" class="image" alt="product_details">
+                                </li>
+                                <li>
+                                    <img src="./assets/images/product_details_2.jpg" class="image" alt="product_details">
+                                </li>
+                                <li>
+                                    <img src="./assets/images/laptop1.png" class="image" alt="product_details">
+                                </li>
+                                <li>
+                                    <img src="./assets/images/laptop2.png" class="image" alt="product_details">
+                                </li>
+                                <li>
+                                    <img src="./assets/images/laptop3.png" class="image" alt="product_details">
+                                </li>
+                                <li>
+                                    <img src="./assets/images/product_details_2.jpg" class="image" alt="product_details">
+                                </li>
+                            </ul>
+                        </div>
+                
+                        <div class="uk-visible" style="background: transparent;">
+                            <a class="uk-position-center-left-out text-black uk-position-small" href="#"
+                                uk-slider-item="previous"><img src="./assets/images/left_arrow.png" alt=""></a>
+                            <a class="uk-position-center-right-out text-black uk-position-small" href="#"
+                                uk-slider-item="next"><img src="./assets/images/right_arrow.png" alt=""></a>
+                        </div>
+                
+                    </div>
+                
+                    <!-- <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul> -->
+                
+                </div>
+
+                <div class="text-left mt-4">
+                    <h2 class="uk-text-bolder">Lorem, ipsum dolor sit amet consectetur adipisicing</h2>
+                    <div>
+                        <div class="float-left d-flex">
+                            <div><p>Posted on: 10th February 2020</p></div>
+                            <div class="ml-3"><p><img src="./assets/images/location_icon.png" style="padding-bottom: 5px;" alt=""> International City</p></div>
+                            <div class="ml-3"><p><img src="./assets/images/eye_icon.png" style="padding-bottom: 5px;" alt=""> 222 views</p></div>
+                        </div>
+                        <br class="uk-hidden@m">
+                        <div class="float-right d-flex">
+                            <div class="ml-3" style="flex: 1;"><a class="color_red"><img src="./assets/images/report_abouse.png" style="padding-bottom: 5px;" alt=""> Report Abuse</a></div>
+                            <div class="ml-3"><a><img src="./assets/images/share_icon.png" style="padding-bottom: 5px;" alt=""> Share: </a></div>
+                            <div class="ml-1"><a href="https://facebook.com"><i class="lni lni-facebook-oval"></i> </a></div>
+                            <div class="ml-1"><a href="https://twitter.com"><i class="fab fa-twitter"></i> </a></div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="mt-5 text-left mb-5">
+                    <div>
+                        <ul class="nav nav-tabs" uk-tab>
+                            <!-- for onclick active navigation (btn btn-primary text-white button-color-white) is responsible -->
+                            <li class="nav-item">
+                                <a class="nav-link active btn btn-primary text-white button-color-white px-5 uk-text-bold" id="details" style="padding: 14px;" href="#">Details</a>
+                            </li>
+                            <li class="nav-item pl-1">
+                                <a class="nav-link active px-5" id="features" style="padding: 14px;" href="#">Features</a>
+                            </li>
+                        </ul>
+                        
+                        <ul class="uk-switcher uk-margin">
+                            <li class="mt-4" style="font-size: 15px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui excepturi quos ipsa itaque quas temporibus reiciendis dignissimos magnam, facilis iusto aperiam a, tempora quasi deserunt minus, error dolore fugit ex!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse suscipit quae non quidem accusamus perferendis saepe officia reprehenderit nihil, iusto ab ipsam sunt laborum consectetur asperiores obcaecati labore quo!. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error magni repellat doloribus veritatis tenetur voluptatibus facere, voluptas odit optio fuga est quae unde? Repellendus cum excepturi laudantium sit ex earum.</li>
+
+                            <li class="mt-4" style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem omnis eum molestiae obcaecati tenetur vero quae nulla sit, hic libero unde deleniti dolores delectus necessitatibus optio sapiente non ipsum. Tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quae obcaecati omnis voluptas deleniti non labore. Qui cumque sed mollitia? Quaerat sapiente voluptatibus blanditiis consequatur, nobis temporibus inventore tempora quo!. <br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam doloribus tempora natus repellat saepe quae sed quod impedit, doloremque expedita nobis quis ipsam reiciendis accusantium animi tempore dolor. Voluptatem, maxime. 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr style="border-top: 1px solid #9e9d9d;">
+
+            </div>
+
+            
+            <div class="uk-width-expand@m mt-4 text-left">
+                <div class="text-left">
+                    <p class="mb-1"> <span class="h6 uk-text-bold"> Worth:</span> <span class="font-weight-bold">AED</span> <span
+                            class="h3 font-weight-bolder" style="color:#1749A0">150</span></p>
+                </div>
+                <div class="uk-card uk-card-default border uk-border-rounded mt-4 uk-box-shadow-xlarge">
+                    <div class="uk-card-header pt-3 pb-1 px-2">
+                        <div class="uk-child-width-1-1" uk-grid>
+                            <div>
+                                <h4 class="uk-text-left pb-1 pl-2 uk-text-bold"> Exchange With</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card-body py-3 px-3 text-left">
+                        <a class="btn btn-outline-danger mb-1 text-center card-button button-color-white">Laptop</a>
+                        <a class="btn btn-outline-danger mb-1 text-center card-button button-color-white">Mobile</a>
+                        <a class="btn btn-outline-danger mb-1 text-center card-button button-color-white">Coin</a>
+                        <a class="btn btn-outline-danger mb-1 text-center card-button button-color-white">Laptop</a>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default border uk-border-rounded mt-4 uk-box-shadow-xlarge">
+                    <div class="uk-card-header pt-3 pb-1 px-2">
+                        <div class="uk-child-width-1-1" uk-grid>
+                            <div>
+                                <h4 class="uk-text-left pb-1 pl-2 uk-text-bold">Trader Information</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card-body py-3 px-3 text-left">
+                        <p class=" mb-1">Name: Maria Thomas</p>
+                        <p class=" mt-1">Address: Kensas, Abilene House#18,Road#07,Dubai,UAE</p>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <a href="#modal-container" uk-toggle style="padding: 10px 0px;border-radius: 7px; background-color: #E5305C;border: 1px solid #E5305C;" class="btn btn-danger uk-width-1-1 button-color-white text-white"><img src="./assets/images/swap_button_logo.png" alt=""> Swap Now</a>
+                </div>
+
+                <div class="mt-2">
+                    <a id='chatWithTraders' style="padding: 10px 0px;border-radius: 7px; background-color: #64AD4A;border: 1px solid #64AD4A;" class="btn btn-success uk-width-1-1 button-color-white text-white"><img src="./assets/images/chat_button_icon.png" alt=""> Chat with trader</a>
+                </div>
+
+
+                <!-- chatting box to chat with traders -->
+                <div class="uk-card uk-card-default uk-width-1-2@m chatbox border-top-radius border-bottom-radius shadow-lg uk-box-shadow-xlarge">
+                    <div class="uk-card-header px-3 border-top-radius" style="background-color: #17489F;">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-border-circle" width="60" height="60" src="./assets/images/trader-1.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h5 class="uk-margin-remove-bottom text-white">Mohammad Abdullah</h5>
+                               
+                                <span class="py-1 px-1 uk-button-danger chat-close uk-border-rounded" style="cursor:pointer;"><span uk-icon="close"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card-body fixed-body uk-overflow-auto px-3 py-3 scrollbar">
+                        
+                        <div class="client-message d-flex-inline mb-3 text-right">
+                            <div class="pr-1">
+                                <img class="uk-border-circle float-right pt-2" width="30" height="30" src="./assets/images/trader-1.png" alt="">
+                            </div>
+                            <div class="pr-5 py-1 uk-border-rounded" style="background-color:#f4f2f2">
+                               <span >
+                                Hello, I am interested to exchange this product. So let's get a deal? 
+                               </span>
+                            </div>
+                            <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom" style="font-size: 12px;"><time datetime="2016-04-01T19:00"><span>Seen</span> April 01, 2016 </time></p>
+                        </div>
+
+                        <div class="trader-message d-flex-inline mb-3 text-left ">
+                            <div class="px-1">
+                                <img class="uk-border-circle float-left pt-2" width="30" height="30" src="./assets/images/trader-2.png" alt="">
+                            </div>
+                            <div class="pl-5 py-1 uk-border-rounded" style="background-color:#f4f2f2">
+                               <span >
+                                Sounds good! Tell me which products you want to exchange with?
+                               </span> 
+                            </div>
+                            <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom" style="font-size: 12px;"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                        </div>
+
+                        <div class="client-message d-flex-inline mb-3 text-right ">
+                            <div class="pr-1">
+                                <img class="uk-border-circle float-right pt-2" width="30" height="30" src="./assets/images/trader-1.png" alt="">
+                            </div>
+                            <div class="pr-5 py-1 uk-border-rounded" style="background-color:#f4f2f2">
+                               <span >
+                                Hello, I am interested to exchange this product. So let's get a deal? 
+                               </span>
+                            </div>
+                            <p class="uk-text-meta uk-margin-remove-top uk-margin-remove-bottom" style="font-size: 12px;"><time datetime="2016-04-01T19:00"><span>Seen</span> April 01, 2016</time></p>
+                        </div>
+
+                    </div>
+
+                        <form action="" method="post">
+                            <div class="d-flex flex-row">
+                                <div class="mr-1">
+                                    <textarea class="uk-textarea" rows="3" placeholder="Write here" style="width:303px;padding-bottom: 10px;"></textarea>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div uk-form-custom class="my-1">
+                                        <input type="file">
+                                        <button class="uk-border-circle py-1 px-1 uk-button-primary" type="button" tabindex="-1"><span uk-icon="upload"></span></button>
+                                    </div>
+                                    <div class="my-1">
+                                        <button class="uk-border-circle py-1 px-1 uk-button-primary" type="button" tabindex="-1"><span uk-icon="arrow-right"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    <div class="uk-card-footer border-bottom-radius" style="background-color:#EB325E;">
+                       <span class="text-white"> Developed by <a href="#" class="uk-button uk-button-text text-white">Royex Technologies</a></span>
+                    </div>
+                </div>
+
+                <!-- swap--modal -->
+                <div id="modal-container" class="uk-modal-container" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body uk-border-rounded px-5">
+                        <button class="uk-modal-close-default btn-danger text-white p-3 uk-border-rounded" type="button" uk-close></button>
+                        <h2 class="uk-modal-title uk-text-center uk-text-bolder">Swap With</h2>
+
+                        <div class="uk-child-width-1-3@m uk-child-width-1-1@s uk-grid-small" uk-grid>
+
+                            <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+                                <div class="uk-card uk-card-default uk-box-shadow-hover-xlarge" style="border-radius: 6px;">
+                                    <div class="uk-card-media-top uk-border-rounded">
+                                        <img src="./assets/images/mobile.png" style="border-top-left-radius: 7px; border-top-right-radius: 7px;height: 187px;"
+                                            alt="">
+                                    </div>
+                                    <div class="uk-card-body p-4">
+                                        <h5 class="h5 font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit</h5>
+                                        
+                                        <div class="py-3">
+                                            <p class="mb-1"> <span class="h5 font-weight-bold"> Worth:</span> <span
+                                                    class="font-weight-bold">AED</span> <span class="h3 font-weight-bolder"
+                                                    style="color:#1749A0">150</span></p>
+                                        </div>
+                                        <div class="uk-text-center">
+                                            <label><input class="uk-checkbox input_check_box" style="border-radius: 3px;height: 30px;width: 30px;"type="checkbox"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+                                <div class="uk-card uk-card-default uk-box-shadow-hover-xlarge" style="border-radius: 6px;">
+                                    <div class="uk-card-media-top uk-border-rounded">
+                                        <img src="./assets/images/camera_pic.png" style="border-top-left-radius: 7px; border-top-right-radius: 7px;"
+                                            alt="">
+                                    </div>
+                                    <div class="uk-card-body p-4">
+                                        <h5 class="h5 font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit</h5>
+                            
+                                        <div class="py-3">
+                                            <p class="mb-1"> <span class="h5 font-weight-bold"> Worth:</span> <span
+                                                    class="font-weight-bold">AED</span> <span class="h3 font-weight-bolder"
+                                                    style="color:#1749A0">150</span></p>
+                                        </div>
+                                        
+                                        <div class="uk-text-center">
+                                            <label><input class="uk-checkbox input_check_box" style="border-radius: 3px;height: 30px;width: 30px;"
+                                                    type="checkbox"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+                                <div class="uk-card uk-card-default uk-box-shadow-hover-xlarge" style="border-radius: 6px;">
+                                    <div class="uk-card-media-top uk-border-rounded">
+                                        <img src="./assets/images/laptop1.png" style="border-top-left-radius: 7px; border-top-right-radius: 7px;"
+                                            alt="">
+                                    </div>
+                                    <div class="uk-card-body p-4">
+                                        <h5 class="h5 font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit</h5>
+                            
+                                        <div class="py-3">
+                                            <p class="mb-1"> <span class="h5 font-weight-bold"> Worth:</span> <span
+                                                    class="font-weight-bold">AED</span> <span class="h3 font-weight-bolder"
+                                                    style="color:#1749A0">150</span></p>
+                                        </div>
+
+                                        <div class="uk-text-center">
+                                            <label><input class="uk-checkbox input_check_box" style="border-radius: 3px;height: 30px;width: 30px;"
+                                                    type="checkbox"></label>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+                                <div class="uk-card uk-card-default uk-box-shadow-hover-xlarge" style="border-radius: 6px;">
+                                    <div class="uk-card-media-top uk-border-rounded">
+                                        <img src="./assets/images/bed.png" style="border-top-left-radius: 7px; border-top-right-radius: 7px;"
+                                            alt="">
+                                    </div>
+                                    <div class="uk-card-body p-4">
+                                        <h5 class="h5 font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit</h5>
+                            
+                                        <div class="py-3">
+                                            <p class="mb-1"> <span class="h5 font-weight-bold"> Worth:</span> <span
+                                                    class="font-weight-bold">AED</span> <span class="h3 font-weight-bolder"
+                                                    style="color:#1749A0">150</span></p>
+                                        </div>
+                                        
+                                        <div class="uk-text-center">
+                                            <label><input class="uk-checkbox input_check_box" style="border-radius: 3px;height: 30px;width: 30px;"
+                                                    type="checkbox"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+                                <div class="uk-card uk-card-default uk-box-shadow-hover-xlarge" style="border-radius: 6px;">
+                                    <div class="uk-card-media-top uk-border-rounded">
+                                        <img src="./assets/images/book.png" style="border-top-left-radius: 7px; border-top-right-radius: 7px;"
+                                            alt="">
+                                    </div>
+                                    <div class="uk-card-body p-4">
+                                        <h5 class="h5 font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit</h5>
+                            
+                                        <div class="py-3">
+                                            <p class="mb-1"> <span class="h5 font-weight-bold"> Worth:</span> <span
+                                                    class="font-weight-bold">AED</span> <span class="h3 font-weight-bolder"
+                                                    style="color:#1749A0">150</span></p>
+                                        </div>
+                                        
+                                        <div class="uk-text-center">
+                                            <label><input class="uk-checkbox input_check_box" style="border-radius: 3px;height: 30px;width: 30px;"
+                                                    type="checkbox"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+                                <div class="uk-card uk-card-default uk-box-shadow-hover-xlarge" style="border-radius: 6px;">
+                                    <div class="uk-card-media-top uk-border-rounded">
+                                        <img src="./assets/images/iphone_pic.png" style="border-top-left-radius: 7px; border-top-right-radius: 7px;"
+                                            alt="">
+                                    </div>
+                                    <div class="uk-card-body p-4">
+                                        <h5 class="h5 font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit</h5>
+                            
+                                        <div class="py-3">
+                                            <p class="mb-1"> <span class="h5 font-weight-bold"> Worth:</span> <span
+                                                    class="font-weight-bold">AED</span> <span class="h3 font-weight-bolder"
+                                                    style="color:#1749A0">150</span></p>
+                                        </div>
+                                        
+                                        <div class="uk-text-center">
+                                            <label><input class="uk-checkbox input_check_box" style="border-radius: 3px;height: 30px;width: 30px;"
+                                                    type="checkbox"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 uk-text-center">
+                            <a href="" class="btn btn-primary text-white button-color-white uk-border-rounded px-5 py-3"> Send request to swap </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-2">
+                    <button id='number_show_button' style="padding: 10px 0px;border-radius: 7px; background-color: #17489F;border: 1px solid #17489F;" class="btn btn-primary uk-width-1-1 button-color-white text-white"><img src="./assets/images/swap_button_phone_logo.png" alt=""> 
+                        <span id='button_name'> Click to reveal phone number </span><span id="phone_number">+971234526565</span>
+                        
+                    </button>
+                </div>
+
+                <div class="mt-2">
+                    <a uk-toggle="target: #modal-example" style="padding: 10px 0px;border-radius: 7px; background-color: #000;border: 1px solid #000;" class="btn btn-dark uk-width-1-1 button-color-white text-white"><img src="./assets/images/swap_button_email_logo.png" alt=""> Email to trader</a>
+
+                    <div id="modal-example" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body">
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <h2 class="uk-modal-title uk-text-center">Email to trader</h2>
+                            <form>
+                                <div class="uk-margin">
+                                    <div class="uk-inline uk-width-1-1 uk-border-rounded">
+                                        <span class="uk-form-icon form-icon pl-3"><img src="./assets/images/person_icon.png" alt="input-img"></span>
+                                        <input type="text" class="uk-input py-4 custom-input" class="uk-input py-4 custom-input" placeholder="Name"
+                                            required>
+                                    </div>
+                                </div>
+                            
+                                <div class="uk-margin">
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon form-icon pl-3"><img src="./assets/images/email_icon.png" alt="input-img"></span>
+                                        <input type="email" class="uk-input py-4 custom-input" class="uk-input py-4 custom-input"
+                                            placeholder="Email" required>
+                                    </div>
+                                </div>
+                            
+                                <div class="uk-margin">
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon form-icon pl-3"><img src="./assets/images/phone_logo.png" alt="input-img"></span>
+                                        <input type="tel" class="uk-input py-4 custom-input" class="uk-input py-4 custom-input"
+                                            placeholder="Phone no." required>
+                                    </div>
+                                </div>
+                            
+                                <div class="uk-margin">
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon form-icon pl-3" style="padding-bottom: 85px;"><img
+                                                src="./assets/images/msg_icon.png" alt="input-img"></span>
+                                        <textarea class="uk-textarea" style="border: 1px solid #c2c2c2;
+                                                                border-radius: 6px;padding-left: 47px !important;padding-top: 15px;" rows="5"
+                                            placeholder="Textarea"></textarea>
+                                    </div>
+                                </div>
+                            
+                                <button class="py-2 px-5 uk-border-rounded uk-box-shadow-hover-xlarge uk-button uk-button-danger"
+                                        href="#">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-card uk-card-default border uk-border-rounded mt-4 uk-box-shadow-xlarge">
+                    <div class="uk-card-header pt-3 pb-1 px-2">
+                        <div class="uk-child-width-1-1" uk-grid>
+                            <div>
+                                <h4 class="uk-text-left pb-1 pl-2 uk-text-bold">Safety Tips for Trader</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card-body py-3 px-3 text-left">
+                        <ul class="uk-list py-2">
+                            <li style="color: #000; font-size: 16px"><i class="fas fa-chevron-right pr-1"></i> Meet seller at a public place</li>
+                            <li style="color: #000; font-size: 16px"><i class="fas fa-chevron-right pr-1"></i> Check the item before you buy</li>
+                            <li style="color: #000; font-size: 16px"><i class="fas fa-chevron-right pr-1"></i> Pay only after collecting the item</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="uk-width-3-4@m mt-5 text-left ">
+                <h3 class="uk-text-bold">Location</h3>
+                <div id="map" class="uk-border-rounded" style="width:auto;height:450px;background:grey">
+                </div>
+                <hr class="mt-5" style="border-top: 1px solid #9e9d9d;">
+            </div>
+
+            <div class="uk-width-3-4@m mt-5 text-left ">
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+                    <div class="d-flex">
+                        <h3 class="uk-text-bold">
+                            <span class="float-left text-black">Related Ads</span>
+                            <span class="text-right uk-position-right">
+                                <a class="uk-position-small mx-0" href="#"  uk-slider-item="previous"><img
+                                        src="./assets/images/left_arrow.png" style="width: 30px;" alt=""></a>
+                                <a class="uk-position-small" href="#" uk-slider-item="next"><img
+                                        src="./assets/images/right_arrow.png" style="width: 30px;"  alt=""></a>
+                            </span>
+                        </h3>
+                    </div>
+                
+                    <ul class="uk-slider-items uk-child-width-1-1@s uk-grid-small mb-5 mx-3 uk-child-width-1-3@m uk-grid">
+                        <li>
+                            <div class="uk-panel">
+                                <div>
+                                    <div class="uk-card uk-card-default uk-box-shadow-hover-xlarge shadow-lg" style="border-radius: 6px;">
+                                        <div class="uk-card-media-top uk-border-rounded">
+                                            <img src="./assets/images/book.png" style="border-top-left-radius: 7px; border-top-right-radius: 7px;"
+                                                alt="">
+                                        </div>
+                                        <div class="uk-card-body p-4">
+                                            <h5 class="h5 font-weight-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit</h5>
+                                            <p class="card-text mb-2"> <img src="./assets/images/location_icon.png" alt="">
+                                                Sheikh Zayed
+                                                Road </p>
+                                            <p class="font-weight-bold mb-1 mt-1">Exchange with:</p>
+                                            <div>
+                                                <button class="btn btn-outline-danger text-center card-button">Laptop</button>
+                                                <button class="btn btn-outline-danger text-center card-button">Mobile</button>
+                                                <button class="btn btn-outline-danger text-center card-button">Coin</button>
+                                            </div>
+                                            <div class="py-3">
+                                                <p class="mb-1"> <span class="h5 font-weight-bold"> Worth:</span> <span
+                                                        class="font-weight-bold">AED</span> <span class="h3 font-weight-bolder"
+                                                        style="color:#1749A0">150</span></p>
+                                            </div>
+                                            <a href="#"
+                                                class="btn uk-button-danger uk-box-shadow-hover-xlarge btn-block button-color-white py-2 h2">View
+                                                Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-panel">
+                                <div>
+                                    <div class="uk-card uk-card-default uk-box-shadow-hover-xlarge" style="border-radius: 6px;">
+                                        <div class="uk-card-media-top uk-border-rounded">
+                                            <img src="./assets/images/book.png"
+                                                style="border-top-left-radius: 7px; border-top-right-radius: 7px;" alt="">
+                                        </div>
+                                        <div class="uk-card-body p-4">
+                                            <h5 class="h5 font-weight-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit</h5>
+                                            <p class="card-text mb-2"> <img src="./assets/images/location_icon.png" alt="">
+                                                Sheikh Zayed
+                                                Road </p>
+                                            <p class="font-weight-bold mb-1 mt-1">Exchange with:</p>
+                                            <div>
+                                                <button class="btn btn-outline-danger text-center card-button">Laptop</button>
+                                                <button class="btn btn-outline-danger text-center card-button">Mobile</button>
+                                                <button class="btn btn-outline-danger text-center card-button">Coin</button>
+                                            </div>
+                                            <div class="py-3">
+                                                <p class="mb-1"> <span class="h5 font-weight-bold"> Worth:</span> <span
+                                                        class="font-weight-bold">AED</span> <span class="h3 font-weight-bolder"
+                                                        style="color:#1749A0">150</span></p>
+                                            </div>
+                                            <a href="#"
+                                                class="btn uk-button-danger uk-box-shadow-hover-xlarge btn-block button-color-white py-2 h2">View
+                                                Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="uk-panel">
+                                <div>
+                                    <div class="uk-card uk-card-default uk-box-shadow-hover-xlarge" style="border-radius: 6px;">
+                                        <div class="uk-card-media-top uk-border-rounded">
+                                            <img src="./assets/images/book.png"
+                                                style="border-top-left-radius: 7px; border-top-right-radius: 7px;" alt="">
+                                        </div>
+                                        <div class="uk-card-body p-4">
+                                            <h5 class="h5 font-weight-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit</h5>
+                                            <p class="card-text mb-2"> <img src="./assets/images/location_icon.png" alt="">
+                                                Sheikh Zayed
+                                                Road </p>
+                                            <p class="font-weight-bold mb-1 mt-1">Exchange with:</p>
+                                            <div>
+                                                <button class="btn btn-outline-danger text-center card-button">Laptop</button>
+                                                <button class="btn btn-outline-danger text-center card-button">Mobile</button>
+                                                <button class="btn btn-outline-danger text-center card-button">Coin</button>
+                                            </div>
+                                            <div class="py-3">
+                                                <p class="mb-1"> <span class="h5 font-weight-bold"> Worth:</span> <span
+                                                        class="font-weight-bold">AED</span> <span class="h3 font-weight-bolder"
+                                                        style="color:#1749A0">150</span></p>
+                                            </div>
+                                            <a href="#"
+                                                class="btn uk-button-danger uk-box-shadow-hover-xlarge btn-block button-color-white py-2 h2">View
+                                                Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="uk-panel">
+                                <div>
+                                    <div class="uk-card uk-card-default uk-box-shadow-hover-xlarge" style="border-radius: 6px;">
+                                        <div class="uk-card-media-top uk-border-rounded">
+                                            <img src="./assets/images/book.png"
+                                                style="border-top-left-radius: 7px; border-top-right-radius: 7px;" alt="">
+                                        </div>
+                                        <div class="uk-card-body p-4">
+                                            <h5 class="h5 font-weight-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit</h5>
+                                            <p class="card-text mb-2"> <img src="./assets/images/location_icon.png" alt="">
+                                                Sheikh Zayed
+                                                Road </p>
+                                            <p class="font-weight-bold mb-1 mt-1">Exchange with:</p>
+                                            <div>
+                                                <button class="btn btn-outline-danger text-center card-button">Laptop</button>
+                                                <button class="btn btn-outline-danger text-center card-button">Mobile</button>
+                                                <button class="btn btn-outline-danger text-center card-button">Coin</button>
+                                            </div>
+                                            <div class="py-3">
+                                                <p class="mb-1"> <span class="h5 font-weight-bold"> Worth:</span> <span
+                                                        class="font-weight-bold">AED</span> <span class="h3 font-weight-bolder"
+                                                        style="color:#1749A0">150</span></p>
+                                            </div>
+                                            <a href="#"
+                                                class="btn uk-button-danger uk-box-shadow-hover-xlarge btn-block button-color-white py-2 h2">View
+                                                Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="uk-panel">
+                                <div>
+                                    <div class="uk-card uk-card-default uk-box-shadow-hover-xlarge" style="border-radius: 6px;">
+                                        <div class="uk-card-media-top uk-border-rounded">
+                                            <img src="./assets/images/book.png"
+                                                style="border-top-left-radius: 7px; border-top-right-radius: 7px;" alt="">
+                                        </div>
+                                        <div class="uk-card-body p-4">
+                                            <h5 class="h5 font-weight-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit</h5>
+                                            <p class="card-text mb-2"> <img src="./assets/images/location_icon.png" alt="">
+                                                Sheikh Zayed
+                                                Road </p>
+                                            <p class="font-weight-bold mb-1 mt-1">Exchange with:</p>
+                                            <div>
+                                                <button class="btn btn-outline-danger text-center card-button">Laptop</button>
+                                                <button class="btn btn-outline-danger text-center card-button">Mobile</button>
+                                                <button class="btn btn-outline-danger text-center card-button">Coin</button>
+                                            </div>
+                                            <div class="py-3">
+                                                <p class="mb-1"> <span class="h5 font-weight-bold"> Worth:</span> <span
+                                                        class="font-weight-bold">AED</span> <span class="h3 font-weight-bolder"
+                                                        style="color:#1749A0">150</span></p>
+                                            </div>
+                                            <a href="#"
+                                                class="btn uk-button-danger uk-box-shadow-hover-xlarge btn-block button-color-white py-2 h2">View
+                                                Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <hr class="mt-5" style="border-top: 1px solid #9e9d9d;">
+                </div>
+
+                <div class="mt-5 text-left mb-5">
+                    <h3 class="uk-text-bold">Leave a Review</h3>
+                    <form>
+                    <div class="uk-child-width-1-3@m uk-grid-medium" uk-grid>
+                        <div>
+                            <label class="uk-form-label font-size-18" for="title">Name*</label>
+                            <div class="uk-width-1-1">
+                                <input class="uk-input" id="title" type="text" style="height: 50px;border-radius: 4px;padding-left: 20px;"
+                                    placeholder="Your name">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="uk-form-label font-size-18" for="title">Email*</label>
+                            <div class="uk-width-1-1">
+                                <input class="uk-input" id="title" type="email" style="height: 50px;border-radius: 4px;padding-left: 20px;"
+                                    placeholder="Your email">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="uk-form-label font-size-18" for="title">Review Title*</label>
+                            <div class="uk-width-1-1">
+                                <input class="uk-input" id="title" type="text" style="height: 50px;border-radius: 4px;padding-left: 20px;"
+                                    placeholder="Your name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-grid-medium" uk-grid>
+
+                        <div class="uk-width-1-3@m">
+                            <label class="uk-form-label font-size-18" for="title">Your Rating*</label>
+                            <div class="uk-width-1-1">
+                                <div class="d-flex">
+                                    <div><i class="lni lni-star pr-2 star" style="cursor: pointer;"></i></div>
+                                    <div><i class="lni lni-star pr-2 star" style="cursor: pointer;"></i></div>
+                                    <div><i class="lni lni-star pr-2 star" style="cursor: pointer;"></i></div>
+                                    <div><i class="lni lni-star pr-2 star" style="cursor: pointer;"></i></div>
+                                    <div><i class="lni lni-star pr-2 star" style="cursor: pointer;"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="uk-width-expand@m">
+                            <label class="uk-form-label font-size-18" for="title">Review Title*</label>
+                            <div class="uk-width-1-1">
+                                <textarea class="uk-input" id="title" style="height: 50px;border-radius: 4px;padding-left: 20px;"
+                                    placeholder="Your review"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                        <button class="py-3 px-5 uk-border-rounded btn uk-box-shadow-hover-xlarge btn-primary">Submit</button>
+                    </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+
+
+    </section>
+
+    <!-- query and info section -->
+    <section style="background: #000;">
+        <div class="uk-container uk-container-large uk-padding-large pb-3">
+            <div class="uk-child-width-1-5@m uk-grid-large" uk-grid>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Quick Links
+                        <hr style="border-top: 1px solid #910404;width: 7rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="about_us.html" class="text-white footer_link">About Us</a></li>
+                        <li><a href="#" class="text-white footer_link">Advertising</a></li>
+                        <li><a href="#" class="text-white footer_link">How to use site?</a></li>
+                        <li><a href="#" class="text-white footer_link">Payment Methods</a></li>
+                        <li><a href="#" class="text-white footer_link">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        UAE
+                        <hr style="border-top: 1px solid #910404; width: 2rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="#" class="text-white footer_link">Dubai</a></li>
+                        <li><a href="#" class="text-white footer_link">Abu Dhabi</a></li>
+                        <li><a href="#" class="text-white footer_link">Ras al Khaimah</a></li>
+                        <li><a href="#" class="text-white footer_link">Sharjah</a></li>
+                        <li><a href="#" class="text-white footer_link">Fujairah</a></li>
+                        <li><a href="#" class="text-white footer_link">Ajman</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Support
+                        <hr style="border-top: 1px solid #910404; width: 5rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="contact_us.html" class="text-white footer_link">Contact Us</a></li>
+                        <li><a href="#" class="text-white footer_link">Terms of Use</a></li>
+                        <li><a href="#" class="text-white footer_link">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white footer_link">Payment Methods</a></li>
+                        <li><a href="#" class="text-white footer_link">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-0 uk-text-bold">
+                        Others
+                        <hr style="border-top: 1px solid #910404; width: 4rem;">
+                    </h4>
+
+                    <ul class="uk-list">
+                        <li><a href="#" class="text-white footer_link">Other Countries</a></li>
+                        <li><a href="#" class="text-white footer_link">Tags</a></li>
+                        <li><a href="#" class="text-white footer_link">Price and Specs</a></li>
+                        <li><a href="#" class="text-white footer_link">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="pl-5">
+                    <div class="py-4">
+                        <img src="./assets/images/logo_new.png" style="width: 176px; max-width: 176px;" alt="logo"><br>
+                        <div class="uk-inline pt-4">
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Facebook" uk-tooltip><i
+                                    class="lni lni-facebook-filled" style="color:grey;"></i></a>
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Twitter" uk-tooltip><i
+                                    class="lni lni-twitter-original" style="color:grey;"></i></a>
+                            <a href="/facebook" class="uk-text-larger h4 pr-3" title="Instagram" uk-tooltip><i
+                                    class="lni lni-instagram-original" style="color:grey;"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer style="background-color: #000;border-top: 1px solid #302f2f;padding: 37px 0px;">
+        <div class="uk-container uk-container-large">
+            <div class="uk-child-width-1-2" uk-grid>
+                <div class="text-left">
+                    <p class="text-white h6">&copy;2020 Tabadol</p>
+                </div>
+                <div class="uk-text-right">
+                    <p class="text-white h6">Designed and Developed by <a style="color:#1748A0 !important"
+                            href="https://royex.net">Royex Technologies</a> </p>
+                </div>
+            </div>
+        </div>
+        <!-- to-top-navigation -->
+        <a href="#" class="text-white to-top" uk-totop title="Go to Top" uk-tooltip uk-scroll></a>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            $('#phone_number').hide()
+            $('#number_show_button').click(e=>{
+                e.preventDefault();
+                if($('#phone_number').hide()){
+                    $('#button_name').hide();
+                    $('#phone_number').show();
+                }
+            })
+        });
+
+        $('#heart').click(e => {
+            e.preventDefault();
+            if($('#love').hasClass('lni lni-heart')){
+                $('#love').removeClass('lni lni-heart')
+                $('#love').addClass('lni lni-heart-filled color_red');
+            }else{
+                $('#love').removeClass('lni lni-heart-filled color_red')
+                $('#love').addClass('lni lni-heart');
+            }
+        })
+
+        $('#details').click(e=>{
+            e.preventDefault();
+            $('#details').addClass('btn btn-primary text-white button-color-white uk-text-bold text-white');
+            $('#features').removeClass('btn btn-primary text-white button-color-white uk-text-bold text-white');
+        })
+
+        $('#features').click(e=>{
+            e.preventDefault();
+            $('#features').addClass('btn btn-primary text-white button-color-white uk-text-bold text-white');
+            $('#details').removeClass('btn btn-primary text-white button-color-white uk-text-bold text-white');
+        })
+
+        $(document).ready(function () {
+            let images = document.querySelectorAll('.image');
+            for(let i=0; i<=images.length; i++){
+                images[i].addEventListener('click', e=>{
+                    e.preventDefault();
+                    let src =images[i].getAttribute('src');
+                    document.getElementById('mainImage').setAttribute('src', src);
+                });
+            }
+
+            let stars = document.querySelectorAll('.star');
+            for (let i = 0; i <= stars.length; i++) {
+                stars[i].addEventListener('click', e => {
+                    e.preventDefault();
+                    stars[i].classList.remove('lni-star')
+                    stars[i].classList.add('lni-star-filled')
+                });
+            }
+        });
+
+        $('#chatWithTraders').click(e=>{
+            e.preventDefault();
+            $('.chatbox').toggle();
+        })
+
+        $('.chat-close').click(e=>{
+            e.preventDefault();
+            $('.chatbox').hide();
+        })
+        
+    </script>
+
+    <!-- ==================================================================================================== -->
+    <!-- All js files for all pages -->
+
+    
+
+   
+    <!-- ==================================================================================================== -->
+</body>
+
+</html>
